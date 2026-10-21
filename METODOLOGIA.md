@@ -19,30 +19,47 @@ El resultado habitual es bloqueo cognitivo, dependencia crónica del docente y s
 
 ```mermaid
 flowchart TD
-    A["1. Contra-Teoría Radical<br/><i>(El concepto es la respuesta a un problema visual)</i>"] --> B["2. Use - Modify - Create<br/><i>(Del análisis del código terminado a la autoría)</i>"]
-    B --> C["3. Fading Scaffolding<br/><i>(Andamiaje que se desvanece clase a clase)</i>"]
-    C --> D["4. JavaScript como Caja Negra<br/><i>(Interactividad vía IA sin desviar el foco del layout)</i>"]
+    A["1. Contra-Teoría Radical<br/><i>(El concepto es la respuesta a un problema visual)</i>"] --> B["2. Micro-Diseño y Use-Modify-Create<br/><i>(Pensar en cajas antes de tocar el teclado)</i>"]
+    B --> C["3. Andamiaje a Elección<br/><i>(Modo Guiado vs. Modo Autónomo)</i>"]
+    C --> D["4. JS Quirúrgico: El Patrón de 3 Pasos<br/><i>(Interactividad del DOM transparente sin algoritmia)</i>"]
 ```
 
 ### Pilar 1: Contra-Teoría Radical
 **Los conceptos no se definen; se descubren resolviendo una fricción visual.**
-* En lugar de dictar una clase teórica sobre `box-sizing: border-box`, el alumno agrega `padding: 20px` a una tarjeta de 300px y observa horrorizado cómo la tarjeta se ensancha a 340px y rompe la grilla. En ese instante de incomodidad visual se introduce `border-box`: como la solución técnica a un dolor tangible.
+* En lugar de dictar una clase teórica sobre `box-sizing: border-box`, el alumno agrega `padding: 20px` a una tarjeta de 300px y observa cómo la tarjeta se ensancha a 340px y rompe la grilla. En ese instante de incomodidad visual se introduce `border-box`: como la solución técnica a un dolor tangible.
 * No se explica `margin-top: auto` con diapositivas: se usa cuando los botones de tres tarjetas quedan bailando a diferentes alturas y se necesita clavarlos contra el piso del contenedor.
 
-### Pilar 2: El Ciclo *Use - Modify - Create*
-En cada sesión, el alumno transita tres fases cognitivas:
-1. **USE (Usar / Observar):** El alumno abre un proyecto que ya funciona, lo inspecciona en el navegador y analiza qué hace cada bloque.
-2. **MODIFY (Modificar guiado):** Sobre un *Starter Kit* con zonas protegidas, el alumno altera variables, modifica reglas y experimenta qué se rompe y qué se arregla.
-3. **CREATE (Crear autónomo):** En el nivel desafío, el alumno extiende el componente agregando elementos nuevos, jerarquías visuales o interactividad.
+### Pilar 2: Micro-Diseño Previo y Ciclo *Use - Modify - Create*
+Antes de escribir una sola línea de código, el alumno aprende a **pensar en cajas** mediante un boceto de 5 minutos:
+* **Herramientas recomendadas:** [Excalidraw](https://excalidraw.com) o [tldraw](https://tldraw.com) (digitales, gratuitas, abren en el navegador sin login) o papel y lápiz con cronómetro estricto.
+* **Prevención de la trampa del dibujo:** Queda prohibido "ilustrar" o dibujar detalles artísticos. El ejercicio consiste exclusivamente en dibujar **cajas rectangulares anidadas** (caja padre y cajas hijas). *"Si no podés dibujarlo como cajas en 3 minutos, no lo vas a poder maquetar en CSS"*.
+* **El ciclo en el código:**
+  1. **USE (Usar / Observar):** Analizar la interfaz terminada con DevTools.
+  2. **MODIFY (Modificar guiado):** Alterar variables, propiedades y espaciados sobre el código base.
+  3. **CREATE (Crear autónomo):** Extender la interfaz con nuevos componentes o estados.
 
-### Pilar 3: Andamiaje Desvaneciente (*Fading Scaffolding*)
-Al principio del trayecto, el Starter Kit viene con el 80% resuelto y el alumno interviene solo en el 20% crítico. A medida que avanzan las semanas, las zonas protegidas del sistema se reducen y la zona de trabajo del alumno se expande, hasta llegar al proyecto integrador final donde el alumno levanta la estructura completa.
+### Pilar 3: Andamiaje a Elección (*Choose Your Scaffold*)
+Para respetar los distintos ritmos de aprendizaje de los adultos sin generar falsa sensación de competencia ni frustración, cada clase ofrece dos modalidades de trabajo:
+* **Modo Guiado (Con Andamiaje):** Para quienes necesitan red de contención. Incluye el Starter Kit con la estructura HTML resuelta y zonas de trabajo delimitadas mediante comentarios.
+* **Modo Autónomo (Sin Andamiaje):** Para quienes eligen desafiarse. Incluye únicamente un archivo `contenido.txt` con los textos crudos y la captura visual de referencia. El alumno abre un archivo vacío, genera su HTML semántico con Emmet (`!`) y escribe sus hojas de estilo desde cero.
 
-### Pilar 4: JavaScript como "Caja Negra" Funcional
-Aprender lógica de programación algorítmica mientras se intenta dominar el espacio bidimensional de CSS satura la memoria de trabajo. 
-* En este trayecto **no se enseña programación en JavaScript**.
-* La interactividad indispensable (abrir menús móviles, alternar facturación mensual/anual o cambiar a modo oscuro) se resuelve usando **prompts estructurados de IA provistos por la cátedra**.
-* El alumno pega el script resultante como una **caja negra**, aprende a verificar que funcione en la consola del navegador y mantiene el 100% de su energía en maquetación, arquitectura semántica y estilos.
+### Pilar 4: JavaScript Quirúrgico (El Patrón de los 3 Pasos)
+En lugar de una "caja negra" mágica que el alumno copia a ciegas y no sabe reparar si falla, o de un curso pesado de algoritmia que devora semanas, se enseña **JavaScript orientado a eventos del DOM**, basado en un único patrón transparente:
+
+```javascript
+// 1. AGARRAR el elemento de la pantalla
+const toggleBtn = document.querySelector('.navbar-toggle');
+const menu = document.querySelector('.navbar-menu');
+
+// 2. ESCUCHAR el clic del usuario
+toggleBtn.addEventListener('click', () => {
+  // 3. PRENDER / APAGAR una clase de CSS
+  menu.classList.toggle('is-open');
+});
+```
+
+* **Por qué funciona:** Con estas 3 líneas se resuelve el 95% de la interactividad del maquetador (menús hamburguesa, modales, pestañas, acordeones y alternadores de modo oscuro).
+* **Autonomía de debugging:** Si un botón no responde, el alumno sabe abrir la consola, revisar si el selector del `querySelector` coincide con su HTML y corregirlo en 30 segundos sin depender de la IA. La IA queda reservada únicamente para utilidades secundarias (ej. persistencia en `localStorage` o cálculos de precios).
 
 ---
 
@@ -52,11 +69,11 @@ Cada clase de 3 horas reloj sigue una coreografía cronometrada y predecible:
 
 | Bloque | Tiempo | Fase | ¿Qué ocurre en el aula? |
 | :---: | :---: | :--- | :--- |
-| **1** | `00:00 - 00:35` | **Apertura y Desarmado** | Demostración de la interfaz terminada en vivo. Inspección en pantalla gigante con DevTools (`F12`): el docente "desarma" las capas de la página mostrando los contenedores flex/grid y los desbordes. |
-| **2** | `00:35 - 00:40` | **Entrega del Starter Kit** | Los alumnos clonan o descargan el proyecto. Identificación rápida de las marcas en el código: `/* ZONA DEL SISTEMA */` vs `/* TU CÓDIGO AQUÍ */`. |
-| **3** | `00:40 - 02:25` | **Taller de Práctica Asistida** | Trabajo individual o en parejas sobre `INSTRUCCIONES.md`. El docente actúa como tutor de mesa, aplicando el protocolo estricto de debugging antes de responder preguntas. |
+| **1** | `00:00 - 00:35` | **Apertura y Desarmado** | Demostración de interfaz terminada. Diagramación rápida de cajas en Excalidraw (5 min) + inspección de estilos en DevTools (`F12`). |
+| **2** | `00:35 - 00:40` | **Elección de Modalidad** | El alumno elige si descargará el Starter Kit en **Modo Guiado** o el reto en **Modo Autónomo**. |
+| **3** | `00:40 - 02:25` | **Taller de Práctica Asistida** | Trabajo individual o en parejas sobre `INSTRUCCIONES.md`. El docente actúa como tutor de mesa aplicando el protocolo de debugging previo a consultas. |
 | **4** | `02:25 - 02:40` | **Pausa Técnica** | Descanso obligatorio. Desconexión de pantallas para reducir la fatiga visual. |
-| **5** | `02:40 - 03:00` | **Standup Meeting de Cierre** | Ronda ágil de 20 minutos de pie o en círculo: qué componente se completó, qué propiedad o desborde generó bloqueo y cómo se destrabó el problema. |
+| **5** | `02:40 - 03:00` | **Standup Meeting de Cierre** | Ronda ágil de 20 minutos: qué componente se completó, qué propiedad o desborde generó bloqueo y cómo se resolvió. |
 
 ---
 
@@ -88,6 +105,7 @@ El trayecto se estructura en dos semestres de 16 clases cada uno, diferenciados 
 │                                                                        │
 │  • Modelo mental: Documento vertical de lectura y Scroll natural.       │
 │  • Núcleo: HTML Semántico, Modelo de Caja estricto y Flexbox (1D).     │
+│  • Interactividad: Patrón de 3 pasos JS para menús y acordeones.       │
 │  • Producción: Despliegue sin terminal mediante Netlify Drop.          │
 └────────────────────────────────────────────────────────────────────────┘
                                     │
@@ -95,8 +113,10 @@ El trayecto se estructura en dos semestres de 16 clases cada uno, diferenciados 
 ┌────────────────────────────────────────────────────────────────────────┐
 │ NIVEL 2: INTERFACES DE APLICACIÓN Y DASHBOARDS (Clases 17 a 32)        │
 │                                                                        │
-│  • Modelo mental: Cabina de control / Pantalla de app (100vh fijo).    │
+│  • Modelo mental: Cabina de control / Pantalla de app fija (100dvh).   │
 │  • Núcleo: Git/GitHub, Posicionamiento (capas), CSS Grid (2D) y Tokens.│
+│  • Regla de Viewport: Mobile-Scroll (natural) y Desktop-App (100dvh).  │
+│  • Salvaguarda Grid: min-width: 0 en columnas para evitar desbordes.   │
 │  • Producción: Despliegue automatizado continuo con GitHub Pages.      │
 └────────────────────────────────────────────────────────────────────────┘
 ```
@@ -106,22 +126,38 @@ El trayecto se estructura en dos semestres de 16 clases cada uno, diferenciados 
 
 ---
 
-## 6. Diseño Anti-Cliché: El Catálogo de Arquetipos
+## 6. Práctica Semanal Autónoma
 
-Para evitar que los trabajos de los alumnos se vean como "páginas genéricas hechas por una IA" (bordes inflados de 30px, gradientes violetas y textos lavados ilegibles), el método incorpora un catálogo de **4 Arquetipos Visuales**:
-
-1. **SaaS Moderno (Clean Tech):** Paleta Slate con acento Índigo, radios moderados (8px), sombras compuestas y micro-interacciones de producto digital.
-2. **Editorial Cálido (Humanista):** Paleta Stone con acento Terracota, tipografía Serif elegante (*Playfair Display*), radios rectilíneos (0-4px) y cero sombras (profundidad por contraste de línea).
-3. **Neo-Brutalismo Suave (Pop/Dinámico):** Trazos negros sólidos de 2px, sombras angulares duras con offset puro (`4px 4px 0 #000`), fondos pasteles vibrantes y gran personalidad.
-4. **Industrial / Fintech (Alta Densidad):** Modo oscuro profundo (`#09090b`), datos numéricos con fuentes monoespaciadas (*JetBrains Mono*), acentos verde terminal y estética de cabina de control.
+Para mitigar la brecha de 6 días entre clase y clase sin caer en imposiciones escolares ni recordatorios invasivos que suelen ignorarse:
+* Cada clase incluye en su repositorio un **Reto Asincrónico Opcional** de 20 a 30 minutos.
+* Se enfoca en una micro-tarea concreta: agregar un componente complementario al proyecto terminado en clase o resolver un mini-ejercicio de detección de errores (*"Spot the Bug"*).
+* La realización es 100% autogestionada por el alumno adulto.
 
 ---
 
-## 7. Filosofía del Standup de Cierre
+## 7. Manejo Profesional del Viewport en Nivel 2
 
-Los últimos 20 minutos de cada clase no son para que el docente hable, sino para consolidar el **modelo mental** de los alumnos. Se realizan dos preguntas disparadoras:
+Para erradicar la frustración habitual de las pantallas de aplicación en dispositivos móviles:
+1. **Uso de `100dvh` en lugar de `100vh`:** Adopción de la unidad moderna *Dynamic Viewport Height* para evitar que la barra de direcciones de Safari o Chrome en smartphones corte la interfaz.
+2. **Estrategia *Mobile-Scroll / Desktop-App*:** En celulares, la aplicación se comporta como un documento de scroll continuo vertical. La cabina cerrada (`height: 100dvh; overflow: hidden;`) con paneles independientes de scroll solo se activa en pantallas de escritorio mediante `@media (min-width: 1024px)`.
+3. **Escudo protector en Grid:** Regla universal de `min-width: 0;` en toda celda o columna de CSS Grid para neutralizar el desborde horizontal de textos largos o tablas.
 
-1. **La Pregunta Diagnóstica:** Evalúa si el alumno entendió *por qué* funciona la solución técnica (ej: *"¿Por qué `margin-top: auto` solo empuja al botón si el padre es Flexbox vertical?"*).
-2. **La Pregunta de Debugging:** Comparte el aprendizaje del error con el grupo (ej: *"¿A quién se le desbordó la grilla al agrandar la tarjeta central y cómo lo solucionó sin romper a las vecinas?"*).
+---
 
-Este cierre transforma el error individual en un activo pedagógico colectivo, preparando al estudiante para la dinámica real de los equipos de tecnología.
+## 8. Diseño Anti-Cliché: El Catálogo de Arquetipos
+
+Para evitar que los proyectos se vean como plantillas genéricas de IA (radios desmedidos de 30px, gradientes saturados sin sentido y bajo contraste), se adopta el catálogo de **4 Arquetipos Visuales** de la [Skill Frontend Standards](.agents/skills/frontend-standards/SKILL.md):
+
+1. **SaaS Moderno (Clean Tech):** Paleta Slate con acento Índigo, radios de 6 a 8px, doble sombra compuesta y micro-interacciones de software.
+2. **Editorial Cálido (Humanista):** Paleta Stone con acento Terracota, tipografía Serif elegante (*Playfair Display*), radios rectilíneos y cero sombras.
+3. **Neo-Brutalismo Suave (Pop/Dinámico):** Trazos negros sólidos de 2px, sombras angulares duras con offset puro (`4px 4px 0 #000`) y fondos pasteles contrastados.
+4. **Industrial / Fintech (Alta Densidad):** Modo oscuro grafito (`#09090b`), cifras numéricas monoespaciadas (*JetBrains Mono*), acentos verde terminal y precisión técnica.
+
+---
+
+## 9. Filosofía del Standup de Cierre
+
+Los últimos 20 minutos de cada clase consolidan el **modelo mental** de los alumnos mediante dos preguntas disparadoras:
+
+1. **La Pregunta Diagnóstica:** Evalúa la comprensión del *por qué* (ej: *"¿Por qué `margin-top: auto` solo empuja el botón al fondo si la tarjeta es un Flexbox de columna?"*).
+2. **La Pregunta de Debugging:** Comparte el aprendizaje del error con el grupo (ej: *"¿A quién se le desbordó la grilla al agrandar la tarjeta central y qué propiedad lo resolvió?"*).
