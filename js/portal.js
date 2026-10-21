@@ -146,6 +146,10 @@
   const viewerPanes = document.querySelectorAll('[data-viewer-pane]');
   const deviceButtons = document.querySelectorAll('[data-device]');
 
+  // Navegación de Vistas Principales (SPA)
+  const mainNavButtons = document.querySelectorAll('[data-view]');
+  const portalViews = document.querySelectorAll('.portal-view');
+
   let currentLevelFilter = 'all';
 
   // 3. Renderizar las tarjetas en la grilla
@@ -259,7 +263,41 @@
     viewerPanes.forEach(pane => pane.classList.toggle('is-active', pane.getAttribute('data-viewer-pane') === tabId));
   }
 
-  // 7. Eventos de Control
+  // 7. Navegación entre Vistas Principales (SPA)
+  function switchMainView(viewName) {
+    const validViews = ['proyectos', 'programa', 'metodologia'];
+    const activeView = validViews.includes(viewName) ? viewName : 'proyectos';
+
+    mainNavButtons.forEach(btn => {
+      btn.classList.toggle('is-active', btn.getAttribute('data-view') === activeView);
+    });
+
+    portalViews.forEach(view => {
+      view.classList.toggle('is-active', view.id === `view-${activeView}`);
+    });
+  }
+
+  mainNavButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const view = btn.getAttribute('data-view');
+      if (view) {
+        window.location.hash = view;
+        switchMainView(view);
+      }
+    });
+  });
+
+  // Sincronizar vista con el hash de la URL
+  function syncViewWithHash() {
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+      switchMainView(hash);
+    }
+  }
+
+  window.addEventListener('hashchange', syncViewWithHash);
+
+  // 8. Eventos de Control del Visor y Filtros
   filterButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       filterButtons.forEach(b => b.classList.remove('is-active'));
@@ -301,4 +339,5 @@
 
   // Inicializar
   renderCards();
+  syncViewWithHash();
 })();

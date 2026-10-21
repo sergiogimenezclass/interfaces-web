@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal de Proyectos | Trayecto Anual de Diseño Web 2027</title>
-  <meta name="description" content="Explorador de proyectos prácticos y código fuente del Trayecto Anual de Diseño Web por Proyectos 2027.">
+  <title>Portal de Formación | Trayecto Anual de Diseño Web 2027</title>
+  <meta name="description" content="Portal interactivo, programa curricular y metodología del Trayecto Anual de Diseño Web por Proyectos 2027.">
   
   <!-- Tipografías (Google Fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
       <span class="portal-tag">Trayecto Anual 2027</span>
       <h1 class="portal-title">Diseño y Desarrollo de Interfaces Web</h1>
       <p class="portal-subtitle">
-        Portal interactivo para explorar los proyectos terminados, probar la respuesta en dispositivos y examinar el código HTML5 y CSS3 de cada clase.
+        Entorno integral de formación práctica: proyectos en vivo con inspección de código, programa analítico de 32 clases y marco metodológico de trabajo.
       </p>
 
       <div class="portal-meta">
@@ -31,26 +31,595 @@
         <div><strong>Stack:</strong> HTML5 · CSS3 Nativo · JS Vanilla</div>
         <div><strong>Metodología:</strong> Anti-Teórica · Use-Modify-Create</div>
       </div>
+
+      <!-- Barra de Navegación Principal (SPA) -->
+      <nav class="portal-main-nav" aria-label="Navegación principal del curso">
+        <button class="main-nav-btn is-active" data-view="proyectos">Proyectos Prácticos</button>
+        <button class="main-nav-btn" data-view="programa">Programa Completo (32 Clases)</button>
+        <button class="main-nav-btn" data-view="metodologia">Metodología Pedagógica</button>
+      </nav>
     </div>
   </header>
 
   <!-- Contenido Principal -->
   <main class="portal-container">
-    <!-- Barra de Filtros por Nivel -->
-    <div class="portal-controls">
-      <div class="filter-tabs" role="tablist" aria-label="Filtrar por nivel">
-        <button class="filter-btn is-active" data-filter="all">Todas las Clases</button>
-        <button class="filter-btn" data-filter="1">Nivel 1: Flujo Continuo</button>
-        <button class="filter-btn" data-filter="2">Nivel 2: Viewport Apps</button>
+
+    <!-- ======================================================== -->
+    <!-- VISTA 1: PROYECTOS PRÁCTICOS (GRILLA + VISOR INTERACTIVO) -->
+    <!-- ======================================================== -->
+    <section class="portal-view is-active" id="view-proyectos" aria-label="Catálogo de Proyectos">
+      <!-- Barra de Filtros por Nivel -->
+      <div class="portal-controls">
+        <div class="filter-tabs" role="tablist" aria-label="Filtrar por nivel">
+          <button class="filter-btn is-active" data-filter="all">Todas las Clases</button>
+          <button class="filter-btn" data-filter="1">Nivel 1: Flujo Continuo</button>
+          <button class="filter-btn" data-filter="2">Nivel 2: Viewport Apps</button>
+        </div>
+
+        <span class="portal-info-badge">Mostrando catálogo de clases activas y proyectadas</span>
       </div>
 
-      <span class="portal-info-badge">Mostrando catálogo de clases activas y proyectadas</span>
-    </div>
-
-    <!-- Grilla de Tarjetas (Renderizada por js/portal.js) -->
-    <section class="classes-grid" id="classes-grid" aria-label="Catálogo de Clases">
-      <!-- Las tarjetas se generan dinámicamente -->
+      <!-- Grilla de Tarjetas (Renderizada por js/portal.js) -->
+      <div class="classes-grid" id="classes-grid">
+        <!-- Las tarjetas se generan dinámicamente -->
+      </div>
     </section>
+
+    <!-- ======================================================== -->
+    <!-- VISTA 2: PROGRAMA COMPLETO (32 CLASES E HITOS)           -->
+    <!-- ======================================================== -->
+    <section class="portal-view" id="view-programa" aria-label="Programa de Clases">
+      <article class="editorial-article">
+        <header class="article-header">
+          <span class="article-badge">Plan Curricular 2027</span>
+          <h2 class="article-title">32 Proyectos Prácticos para Aprender Diseño Web</h2>
+          <p class="article-lead">
+            32 semanas · 1 clase semanal de 3 horas (180 min) · Cero teoría de memoria · Cada clase resuelve un problema visual concreto con código real.
+          </p>
+        </header>
+
+        <!-- Bloque Nivel 1 -->
+        <h3 class="section-block-title">Nivel 1: Páginas Web y Sitios de Lectura (Clases 01 a 16)</h3>
+        <p class="section-block-desc">
+          <strong>Enfoque:</strong> Documentos web continuos con scroll vertical natural, estructura semántica, tipografía cuidada, Flexbox y publicación en <strong>Netlify Drop</strong>.
+        </p>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th class="cell-num">#</th>
+                <th>Proyecto</th>
+                <th>Problema que resolvemos</th>
+                <th>Aprendizaje HTML &amp; CSS</th>
+                <th>Estilo</th>
+                <th>Interacción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="cell-num">01</td>
+                <td class="cell-name"><strong>Tarjeta de Perfil Personal (Link in Bio)</strong></td>
+                <td>La web por defecto muestra texto plano desordenado y enlaces azules.</td>
+                <td>Estructura básica (`html`, `head`, `body`), textos, enlaces, imágenes y primer CSS.</td>
+                <td><span class="badge-tag">Editorial Cálido</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">02</td>
+                <td class="cell-name"><strong>Ficha de Receta Culinaria</strong></td>
+                <td>El texto corrido sin jerarquías cansa la vista y nadie lo lee.</td>
+                <td>Semántica (`header`, `main`, `article`, listas), fuentes, tamaños e interlineado.</td>
+                <td><span class="badge-tag">Editorial Cálido</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">03</td>
+                <td class="cell-name"><strong>Tarjeta de Producto E-Commerce</strong></td>
+                <td>Las fotos y textos se pegan a los bordes de la tarjeta o se salen.</td>
+                <td><strong>Box Model I:</strong> Width, height, padding, border y margin. Evitar desbordes.</td>
+                <td><span class="badge-tag">SaaS Moderno</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">04</td>
+                <td class="cell-name"><strong>Banner Promocional con Fondo</strong></td>
+                <td>Agregar espacio interno agranda la caja y rompe el ancho calculado.</td>
+                <td>`box-sizing: border-box`, fondos con color e imágenes completas (`cover`).</td>
+                <td><span class="badge-tag">Neo-Brutalismo</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">05</td>
+                <td class="cell-name"><strong>Artículo con Citas Destacadas</strong></td>
+                <td>Líneas de texto eternas de punta a punta de la pantalla que agotan los ojos.</td>
+                <td>Google Fonts, medidas en `rem` y límites de ancho centrado (`max-width: 68ch`).</td>
+                <td><span class="badge-tag">Editorial Cálido</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">06</td>
+                <td class="cell-name"><strong>Barra de Navegación (Topbar)</strong></td>
+                <td>Logo a la izquierda y botones a la derecha sin usar flotantes rotos.</td>
+                <td><strong>Flexbox I:</strong> Fila horizontal (`display: flex`) y extremos (`space-between`).</td>
+                <td><span class="badge-tag">SaaS Moderno</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">07</td>
+                <td class="cell-name"><strong>Botonera y Barra de Acciones</strong></td>
+                <td>Iconos y textos dentro de un botón quedan desalineados verticalmente.</td>
+                <td>Centrado vertical (`align-items: center`), separación con `gap` y efectos `:hover`.</td>
+                <td><span class="badge-tag">Industrial</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">08</td>
+                <td class="cell-name"><strong>Tabla de Precios y Planes</strong></td>
+                <td>Tarjetas en fila con alturas dispares y botones flotando a distinta altura.</td>
+                <td>Alturas parejas con stretch, anchos iguales (`flex: 1`) y botones al fondo con `margin-top: auto`.</td>
+                <td><span class="badge-tag">SaaS Moderno</span></td>
+                <td><span class="badge-interactive">Switch Mensual/Anual</span></td>
+              </tr>
+              <tr>
+                <td class="cell-num">09</td>
+                <td class="cell-name"><strong>Galería de Trabajos (Portfolio)</strong></td>
+                <td>Al achicar la pantalla, las tarjetas se aprietan infinitamente hasta deformarse.</td>
+                <td>Columnas fluidas responsivas con `flex-wrap: wrap` y anchos porcentuales.</td>
+                <td><span class="badge-tag">Neo-Brutalismo</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">10</td>
+                <td class="cell-name"><strong>Catálogo de Productos con Filtros</strong></td>
+                <td>Organizar una columna fija de filtros a la izquierda y grilla a la derecha.</td>
+                <td>Flexbox anidado: caja contenedora principal dividida en lateral y cuerpo.</td>
+                <td><span class="badge-tag">SaaS Moderno</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">11</td>
+                <td class="cell-name"><strong>Formulario de Registro y Contacto</strong></td>
+                <td>Casilleros desalineados y el usuario no sabe dónde hacer clic para escribir.</td>
+                <td>Inputs accesibles (text, email, password), etiquetas `<label>` vinculadas y foco con `:focus`.</td>
+                <td><span class="badge-tag">SaaS Moderno</span></td>
+                <td><span class="badge-interactive">Mostrar Contraseña</span></td>
+              </tr>
+              <tr>
+                <td class="cell-num">12</td>
+                <td class="cell-name"><strong>Formulario de Cotización o Reservas</strong></td>
+                <td>Opciones de selección múltiple, desplegables y comentarios desordenados.</td>
+                <td>Elementos `<select>`, `<checkbox>`, `<radio>` y `<textarea>` estilizados y legibles.</td>
+                <td><span class="badge-tag">Editorial Cálido</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">13</td>
+                <td class="cell-name"><strong>Tabla de Posiciones o Comparativa</strong></td>
+                <td>Datos numéricos desalineados y difíciles de comparar a simple vista.</td>
+                <td>Tablas semánticas (`table`, `thead`, `tbody`), `border-collapse` y alineación numérica.</td>
+                <td><span class="badge-tag">Industrial</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">14</td>
+                <td class="cell-name"><strong>Página Completa de Producto (Parte 1)</strong></td>
+                <td>Unir todo lo aprendido en una página integral larga y comercial.</td>
+                <td>Estructura completa de landing page, scroll suave y acordeón nativo `<details>`.</td>
+                <td><span class="badge-tag">Libre</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">15</td>
+                <td class="cell-name"><strong>Página Completa de Producto (Parte 2)</strong></td>
+                <td>En la pantalla chica del celular el menú tapa la página y requiere botón.</td>
+                <td>Media Queries responsivas y menú hamburguesa conectado con el interruptor JS de 3 pasos.</td>
+                <td><span class="badge-tag">Libre</span></td>
+                <td><span class="badge-interactive">Menú Hamburguesa</span></td>
+              </tr>
+              <tr>
+                <td class="cell-num">16</td>
+                <td class="cell-name"><strong>Primera Web en Internet y Auditoría</strong></td>
+                <td>La página solo funciona localmente y no puede compartirse con el mundo.</td>
+                <td>Auditoría de sintaxis y despliegue gratuito a producción con **Netlify Drop**.</td>
+                <td><span class="badge-tag">Libre</span></td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- Bloque Nivel 2 -->
+        <h3 class="section-block-title">Nivel 2: Pantallas de Aplicaciones, Paneles y Sistemas de Diseño (Clases 17 a 32)</h3>
+        <p class="section-block-desc">
+          <strong>Enfoque:</strong> Pantallas de aplicación (100dvh desktop / scroll móvil), control de versiones con <strong>Git &amp; GitHub</strong>, CSS Grid bidimensional, tokens de diseño y <strong>GitHub Pages</strong>.
+        </p>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th class="cell-num">#</th>
+                <th>Proyecto</th>
+                <th>Problema que resolvemos</th>
+                <th>Aprendizaje HTML &amp; CSS</th>
+                <th>Estilo</th>
+                <th>Interacción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="cell-num">17</td>
+                <td class="cell-name"><strong>Control Profesional con Git</strong></td>
+                <td>Modificar código sin copia de seguridad hace que un error borre horas de trabajo.</td>
+                <td>Terminal de VS Code, repositorios locales con Git, commits y push a GitHub.</td>
+                <td><span class="badge-tag">Industrial</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">18</td>
+                <td class="cell-name"><strong>Tarjeta con Notificación Flotante (Badge)</strong></td>
+                <td>Colocar un badge en la esquina de una tarjeta sin que corra los textos.</td>
+                <td>Posicionamiento fuera de flujo: `position: relative` + `position: absolute`.</td>
+                <td><span class="badge-tag">SaaS Moderno</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">19</td>
+                <td class="cell-name"><strong>Menú Superior Fijo con Notificaciones</strong></td>
+                <td>El menú desaparece al scrollear y una ventanita flotante queda tapada.</td>
+                <td>Navegación pegada con `position: sticky` y apilamiento en capas con `z-index`.</td>
+                <td><span class="badge-tag">Industrial</span></td>
+                <td><span class="badge-interactive">Pop de Avisos</span></td>
+              </tr>
+              <tr>
+                <td class="cell-num">20</td>
+                <td class="cell-name"><strong>Mosaico de Fotos y Portfolio Creativo</strong></td>
+                <td>Flexbox solo piensa en 1D; no permite mosaicos con fotos de tamaños variados.</td>
+                <td><strong>CSS Grid:</strong> Cuadrículas bidimensionales usando fracciones (`fr`) y `gap`.</td>
+                <td><span class="badge-tag">Neo-Brutalismo</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">21</td>
+                <td class="cell-name"><strong>Grilla Bento (Estilo Apple / Linear)</strong></td>
+                <td>Tarjetas modernas donde una ocupa dos filas y dos columnas sin romper el resto.</td>
+                <td>Expansión en grilla con `grid-column: span 2` y `grid-row: span 2`.</td>
+                <td><span class="badge-tag">SaaS Moderno</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">22</td>
+                <td class="cell-name"><strong>Estructura Base de una App (App Shell)</strong></td>
+                <td>Pantalla fija de aplicación donde el sidebar queda quieto y el centro scrollea.</td>
+                <td>Áreas nombradas (`grid-template-areas`), altura real `100dvh` y scroll encapsulado.</td>
+                <td><span class="badge-tag">Industrial</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">23</td>
+                <td class="cell-name"><strong>Panel de Métricas (Dashboard de Control)</strong></td>
+                <td>Coordinar el esqueleto general con los detalles dentro de cada estadística.</td>
+                <td>La combinación profesional: Grid para la macro-estructura y Flexbox para micro-tarjetas.</td>
+                <td><span class="badge-tag">Industrial</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">24</td>
+                <td class="cell-name"><strong>Grillas Auto-Responsivas Sin Media Queries</strong></td>
+                <td>Escribir reglas manuales para cada tamaño de pantalla es agotador y frágil.</td>
+                <td>Columnas fluidas inteligentes con `repeat(auto-fit, minmax(280px, 1fr))`.</td>
+                <td><span class="badge-tag">SaaS Moderno</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">25</td>
+                <td class="cell-name"><strong>Menú Lateral Deslizable Móvil</strong></td>
+                <td>En celular el sidebar ocupa toda la pantalla y asfixia el contenido central.</td>
+                <td>Mobile-First: sidebar oculto por defecto con transformación lateral fluida.</td>
+                <td><span class="badge-tag">SaaS Moderno</span></td>
+                <td><span class="badge-interactive">Sidebar Deslizable</span></td>
+              </tr>
+              <tr>
+                <td class="cell-num">26</td>
+                <td class="cell-name"><strong>Sistema de Colores y Tokens (`:root`)</strong></td>
+                <td>Cambiar la identidad de marca obliga a buscar y reemplazar cientos de líneas.</td>
+                <td>Variables nativas de CSS (`:root`) para colores, tipografías y radios globales.</td>
+                <td><span class="badge-tag">Libre</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">27</td>
+                <td class="cell-name"><strong>Modo Oscuro (Dark Mode) con Persistencia</strong></td>
+                <td>Los usuarios quieren interfaz nocturna sin duplicar archivos CSS.</td>
+                <td>Variables dinámicas redefinidas en clase `.dark` y guardado en `localStorage`.</td>
+                <td><span class="badge-tag">Industrial</span></td>
+                <td><span class="badge-interactive">Switch Dark/Light</span></td>
+              </tr>
+              <tr>
+                <td class="cell-num">28</td>
+                <td class="cell-name"><strong>Iconos Nítidos (SVG) y Multimedia</strong></td>
+                <td>Imágenes PNG se pixelen al agrandar y no cambian de color con el texto.</td>
+                <td>Iconos vectoriales Tabler Icons (`currentColor`), video y audio HTML5 nativos.</td>
+                <td><span class="badge-tag">Editorial Cálido</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">29</td>
+                <td class="cell-name"><strong>Validación Visual en Formularios</strong></td>
+                <td>El usuario escribe mal un dato y no se entera hasta enviar la página.</td>
+                <td>Inputs avanzados (date, range, color) y feedback en tiempo real con `:valid` e `:invalid`.</td>
+                <td><span class="badge-tag">SaaS Moderno</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">30</td>
+                <td class="cell-name"><strong>Factura Lista para Imprimir y Guardar en PDF</strong></td>
+                <td>Al imprimir con `Ctrl+P`, salen menús, botones y se cortan tablas entre hojas.</td>
+                <td>Estilos específicos de impresión (`@media print`): limpieza y saltos de página controlados.</td>
+                <td><span class="badge-tag">Editorial Cálido</span></td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td class="cell-num">31</td>
+                <td class="cell-name"><strong>Proyecto Final: Dashboard SaaS Completo</strong></td>
+                <td>Ensamblar todas las destrezas del año en un producto digital funcional completo.</td>
+                <td>Arquitectura limpia, accesibilidad por teclado y modal emergente nativo.</td>
+                <td><span class="badge-tag">Libre</span></td>
+                <td><span class="badge-interactive">Modal de Registros</span></td>
+              </tr>
+              <tr>
+                <td class="cell-num">32</td>
+                <td class="cell-name"><strong>Publicación Automática en GitHub Pages</strong></td>
+                <td>La aplicación debe estar online y actualizarse con cada commit de Git.</td>
+                <td>Despliegue automatizado con Pages, auditoría con Lighthouse y entrega final.</td>
+                <td><span class="badge-tag">Libre</span></td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- Bloque Hitos -->
+        <h3 class="section-block-title">Los 8 Hitos Clave del Año</h3>
+        <p class="section-block-desc">
+          Puntos de control formativos donde se consolida un proyecto completo para sumar al portfolio.
+        </p>
+
+        <div class="milestones-grid">
+          <div class="milestone-card">
+            <span class="milestone-week">Semana 04 · Nivel 1</span>
+            <h4 class="milestone-title">Hito 1: Control de Cajas</h4>
+            <p class="milestone-desc">Banner promocional. Dominio exacto del Box Model sin desbordes de pantalla.</p>
+          </div>
+          <div class="milestone-card">
+            <span class="milestone-week">Semana 08 · Nivel 1</span>
+            <h4 class="milestone-title">Hito 2: Dominio de Flexbox</h4>
+            <p class="milestone-desc">Tabla de 3 planes de precios con alturas unificadas y botones alineados al fondo.</p>
+          </div>
+          <div class="milestone-card">
+            <span class="milestone-week">Semana 13 · Nivel 1</span>
+            <h4 class="milestone-title">Hito 3: Formularios y Datos</h4>
+            <p class="milestone-desc">Formularios accesibles y tablas numéricas perfectamente legibles.</p>
+          </div>
+          <div class="milestone-card">
+            <span class="milestone-week">Semana 16 · Nivel 1</span>
+            <h4 class="milestone-title">Hito 4: Cierre Nivel 1</h4>
+            <p class="milestone-desc">Landing page comercial completa publicada en internet vía Netlify Drop.</p>
+          </div>
+          <div class="milestone-card">
+            <span class="milestone-week">Semana 17 · Nivel 2</span>
+            <h4 class="milestone-title">Hito 5: Trabajo con Git</h4>
+            <p class="milestone-desc">Primer repositorio versionado en terminal y sincronizado con GitHub.</p>
+          </div>
+          <div class="milestone-card">
+            <span class="milestone-week">Semana 22 · Nivel 2</span>
+            <h4 class="milestone-title">Hito 6: Pantalla de App (100dvh)</h4>
+            <p class="milestone-desc">Panel de aplicación con sidebar fijo y scroll de trabajo independiente.</p>
+          </div>
+          <div class="milestone-card">
+            <span class="milestone-week">Semana 27 · Nivel 2</span>
+            <h4 class="milestone-title">Hito 7: Tokens y Modo Oscuro</h4>
+            <p class="milestone-desc">Sistema de variables en `:root` con alternancia persistente de tema claro/oscuro.</p>
+          </div>
+          <div class="milestone-card">
+            <span class="milestone-week">Semana 32 · Nivel 2</span>
+            <h4 class="milestone-title">Hito 8: Entrega Integrador Final</h4>
+            <p class="milestone-desc">Aplicación web completa publicada y sincronizada en GitHub Pages.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- VISTA 3: METODOLOGÍA PEDAGÓGICA                          -->
+    <!-- ======================================================== -->
+    <section class="portal-view" id="view-metodologia" aria-label="Metodología de Trabajo">
+      <article class="editorial-article">
+        <header class="article-header">
+          <span class="article-badge">Marco Metodológico</span>
+          <h2 class="article-title">Cómo Enseñamos y Aprendemos</h2>
+          <p class="article-lead">
+            Una propuesta pedagógica 100% práctica basada en proyectos reales, diseñada para eliminar la frustración teórica y el bloqueo frente a la hoja en blanco.
+          </p>
+        </header>
+
+        <!-- Los 4 Principios -->
+        <h3 class="section-block-title">Los Cuatro Principios de Clase</h3>
+        <p class="section-block-desc">
+          Fundamentos aplicados en cada sesión desde el primer minuto de cursada:
+        </p>
+
+        <div class="principles-grid">
+          <div class="principle-card">
+            <div class="principle-num">01</div>
+            <h4 class="principle-title">El código resuelve un problema visual</h4>
+            <p class="principle-text">
+              No memorizamos etiquetas de antemano. La teoría aparece únicamente como solución técnica ante una fricción visual evidente (un botón desalineado, una caja desbordada o un texto ilegible).
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-num">02</div>
+            <h4 class="principle-title">Boceto en cajas antes de escribir código</h4>
+            <p class="principle-text">
+              Pensar en cajas estructuradas antes de tocar el teclado. Dedicamos 5 minutos en Excalidraw o papel a dibujar rectángulos jerárquicos (padres e hijos). Si se puede esquematizar en 3 minutos, se puede maquetar sin trabas.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-num">03</div>
+            <h4 class="principle-title">Elegí tu nivel de ayuda en cada clase</h4>
+            <p class="principle-text">
+              Cada alumno regula su desafío diario: <strong>Modo Guiado</strong> (plantilla con HTML resuelto y comentarios en CSS para avanzar con contención) o <strong>Modo Autónomo</strong> (texto crudo y objetivo visual para construir desde cero).
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-num">04</div>
+            <h4 class="principle-title">JavaScript simple y quirúrgico</h4>
+            <p class="principle-text">
+              Sin matemáticas abstractas ni algoritmos pesados en etapas iniciales. Usamos el patrón transparente de 3 pasos que opera exactamente como un interruptor de luz en la pared.
+            </p>
+          </div>
+        </div>
+
+        <!-- Patrón JS de 3 pasos -->
+        <h4 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem;">El Patrón de 3 Pasos del DOM</h4>
+        <p class="section-block-desc">
+          Toda interactividad en las clases iniciales se resuelve conectando el evento del usuario con una clase de estilos en CSS:
+        </p>
+
+        <div class="code-example-box">
+<span style="color:#78716c;">// 1. ELEGIR los elementos de la interfaz</span>
+<span style="color:#f97316;">const</span> botonMenu = document.<span style="color:#38bdf8;">querySelector</span>(<span style="color:#a3e635;">'.menu-toggle'</span>);
+<span style="color:#f97316;">const</span> navMenu   = document.<span style="color:#38bdf8;">querySelector</span>(<span style="color:#a3e635;">'.nav-links'</span>);
+
+<span style="color:#78716c;">// 2. ESCUCHAR el clic del usuario</span>
+botonMenu.<span style="color:#38bdf8;">addEventListener</span>(<span style="color:#a3e635;">'click'</span>, () =&gt; {
+  <span style="color:#78716c;">// 3. PRENDER / APAGAR la clase en CSS</span>
+  navMenu.classList.<span style="color:#38bdf8;">toggle</span>(<span style="color:#a3e635;">'is-open'</span>);
+});
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- Cronograma de 180 Minutos -->
+        <h3 class="section-block-title">Estructura de una Clase de 3 Horas (180 Minutos)</h3>
+        <p class="section-block-desc">
+          Una rutina predecible y cuidada para asegurar el acompañamiento docente mesa por mesa:
+        </p>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th style="width: 5rem;">Bloque</th>
+                <th style="width: 8rem;">Tiempo</th>
+                <th style="width: 14rem;">Momento</th>
+                <th>Actividad en el aula</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Bloque 1</strong></td>
+                <td><code>00:00 - 00:35</code></td>
+                <td><strong>Apertura y Desarmado</strong></td>
+                <td>Proyección de la <code>version-terminada</code> en pantalla grande. Inspección con DevTools (`F12`) y boceto ágil de cajas en Excalidraw (5 min).</td>
+              </tr>
+              <tr>
+                <td><strong>Bloque 2</strong></td>
+                <td><code>00:35 - 00:40</code></td>
+                <td><strong>Elección de Modo</strong></td>
+                <td>Cada estudiante selecciona su punto de partida: <code>starter-kit-guiado</code> (asistido) o <code>starter-kit-autonomo</code> (hoja en blanco).</td>
+              </tr>
+              <tr>
+                <td><strong>Bloque 3</strong></td>
+                <td><code>00:40 - 02:25</code></td>
+                <td><strong>Taller de Práctica</strong></td>
+                <td>Maquetación individual o en duplas siguiendo <code>INSTRUCCIONES.md</code>. El docente recorre mesa por mesa destrabando fricciones puntuales.</td>
+              </tr>
+              <tr>
+                <td><strong>Bloque 4</strong></td>
+                <td><code>02:25 - 02:40</code></td>
+                <td><strong>Pausa Activa</strong></td>
+                <td>15 minutos para despejar la vista, tomar un café y desconectar de las pantallas.</td>
+              </tr>
+              <tr>
+                <td><strong>Bloque 5</strong></td>
+                <td><code>02:40 - 03:00</code></td>
+                <td><strong>Puesta en Común</strong></td>
+                <td>Ronda final de 20 minutos: logros alcanzados, qué propiedades costaron resolver y cómo se solucionaron colectivamente.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- Protocolo de 4 Pasos -->
+        <h3 class="section-block-title">Protocolo de Depuración en 4 Pasos</h3>
+        <p class="section-block-desc">
+          Camino estandarizado que entrena a los estudiantes a encontrar y corregir desajustes visuales mediante las herramientas de desarrollo del navegador:
+        </p>
+
+        <div class="protocol-steps">
+          <div class="protocol-step">
+            <span class="step-badge">Paso 1</span>
+            <div class="step-content">
+              <h4>Inspeccionar el elemento con F12</h4>
+              <p>Clic derecho sobre el elemento desalineado &gt; <em>Inspeccionar</em>. Localizar la etiqueta exacta en el árbol del DOM.</p>
+            </div>
+          </div>
+
+          <div class="protocol-step">
+            <span class="step-badge">Paso 2</span>
+            <div class="step-content">
+              <h4>Verificar la insignia flex o grid en el contenedor padre</h4>
+              <p>Confirmar si el padre directo tiene <code>display: flex</code> o <code>display: grid</code> declarado. Si no aparece, revisar errores tipográficos en el selector del CSS.</p>
+            </div>
+          </div>
+
+          <div class="protocol-step">
+            <span class="step-badge">Paso 3</span>
+            <div class="step-content">
+              <h4>Detectar propiedades tachadas en el panel Styles</h4>
+              <p>Una línea tachada indica que otra regla de mayor especificidad la está anulando o que hubo un error de sintaxis en el valor asignado.</p>
+            </div>
+          </div>
+
+          <div class="protocol-step">
+            <span class="step-badge">Paso 4</span>
+            <div class="step-content">
+              <h4>Probar la corrección en vivo antes de editar el archivo</h4>
+              <p>Cambiar los valores directamente en el inspector. Cuando el ajuste visual responda como se espera, trasladar la solución al archivo <code>styles.css</code> en VS Code.</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- Estructura Canónica -->
+        <h3 class="section-block-title">Estructura Canónica de Cada Clase</h3>
+        <p class="section-block-desc">
+          Cada carpeta del repositorio mantiene una organización predecible e idéntica de 5 elementos:
+        </p>
+
+        <div class="code-example-box">
+clase-XX/
+├── FICHA-TECNICA.md          <span style="color:#78716c;"># Ficha pedagógica de la sesión para el docente y el alumno</span>
+├── INSTRUCCIONES.md          <span style="color:#78716c;"># Guía técnica: Nivel Base, Desafío y Reto semanal</span>
+├── version-terminada/        <span style="color:#78716c;"># Meta visual 100% resuelta para desarmar y comparar</span>
+├── starter-kit-guiado/       <span style="color:#78716c;"># Plantilla con HTML listo y comentarios guía en CSS</span>
+└── starter-kit-autonomo/     <span style="color:#78716c;"># Texto crudo y especificación para maquetar desde cero</span>
+        </div>
+      </article>
+    </section>
+
   </main>
 
   <!-- Visor Interactivo (Modal para Live Preview y Código) -->
@@ -89,14 +658,14 @@
         <!-- Panel 2: Código HTML -->
         <section class="viewer-pane" data-viewer-pane="html" aria-label="Código fuente HTML">
           <div class="code-wrapper">
-            <pre class="code-block" id="code-html"><code>Cargando HTML...</code></pre>
+            <pre class="code-block" id="code-html"></pre>
           </div>
         </section>
 
         <!-- Panel 3: Código CSS -->
         <section class="viewer-pane" data-viewer-pane="css" aria-label="Código fuente CSS">
           <div class="code-wrapper">
-            <pre class="code-block" id="code-css"><code>Cargando CSS...</code></pre>
+            <pre class="code-block" id="code-css"></pre>
           </div>
         </section>
 
