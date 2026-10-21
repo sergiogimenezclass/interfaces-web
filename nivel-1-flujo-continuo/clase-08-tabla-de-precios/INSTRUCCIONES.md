@@ -60,7 +60,7 @@ Una vez completado el Nivel Base sin errores de consola ni desbordes:
 1. Dentro del HTML de la tarjeta `.card--featured`, agregá un elemento `<span class="badge">Más Popular</span>` arriba del título.
 2. Estilizalo con fondo de color primario, texto blanco, tamaño de fuente pequeño (`0.75rem`), bordes redondeados (`border-radius: 9999px`) y centrado horizontal.
 
-### Reto 3: Interactividad con IA (Caja Negra)
+### Reto 3: Interactividad con IA y el Patrón de 3 Pasos
 1. En `index.html`, agregá sobre la grilla los dos botones provistos en el Starter Kit:
    ```html
    <div class="billing-toggle">
@@ -68,6 +68,32 @@ Una vez completado el Nivel Base sin errores de consola ni desbordes:
      <button id="btn-yearly" class="toggle-btn">Anual (-20%)</button>
    </div>
    ```
-2. Copiá el **Prompt de IA Provisto** en tu cliente de IA preferido.
-3. Tomá el bloque `<script>` resultante y pegalo justo antes de la etiqueta de cierre `</body>`.
-4. Probá hacer clic en "Anual": verificá que los montos cambien en vivo y el texto cambie a "/año".
+2. Copiá el **Prompt de IA Provisto** (disponible en la Ficha Técnica) para generar el script de recálculo de precios anuales.
+3. Inspeccioná el código generado antes de pegarlo: identificá el patrón de 3 pasos (`querySelector`, `addEventListener('click')` y `classList.toggle('active')`).
+4. Pegalo antes de `</body>` y comprobá en el navegador que al hacer clic en "Anual", los precios se multipliquen por 10 y el texto cambie a `/año`.
+
+---
+
+## Reto Asincrónico Opcional (Para practicar en la semana)
+
+* **Consigna de extensión autónoma:**
+  1. Agregá una 4ta tarjeta a la grilla para un plan llamado **"Estudiantes"** (precio `$9/mes`).
+  2. Ajustá los anchos para verificar que `flex: 1` reparta el espacio automáticamente en 4 columnas iguales sin romper la alineación horizontal.
+  3. Verificá que el botón "Elegir Estudiantes" quede clavado al fondo a la misma altura que los demás con `margin-top: auto`.
+
+---
+
+## 📚 Biblioteca de Profundización Teórica (Anexo de consulta)
+
+*Material curado para quienes deseen comprender el fundamento formal y matemático de las propiedades de esta clase:*
+
+* 📖 **MDN Web Docs (Oficial):**
+  * [Conceptos Básicos de Flexbox](https://developer.mozilla.org/es/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox) - Explicación canónica del eje principal (*main axis*) y el eje transversal (*cross axis*).
+  * [Control de proporciones en Flexbox: `flex-grow`, `flex-shrink` y `flex-basis`](https://developer.mozilla.org/es/docs/Web/CSS/CSS_flexible_box_layout/Controlling_ratios_of_flex_items_along_the_main_axis) - Cómo calcula el navegador el reparto de espacio sobrante.
+  * [Alineación en Flexbox y el uso de márgenes automáticos](https://developer.mozilla.org/es/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container#using_auto_margins_for_main_axis_alignment) - Por qué `margin-top: auto` absorbe todo el espacio libre en un eje flex.
+* 🎯 **Guía Visual e Interactiva:**
+  * [CSS-Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - La referencia visual más utilizada en la industria para consultar propiedades de contenedor vs propiedades de ítem.
+* 🎬 **Videos Cortos de Profundización (5 a 8 min):**
+  * [Kevin Powell: Flexbox margin-top: auto is a superpower](https://www.youtube.com/watch?v=D-wVy_22z6o) - Demostración visual de por qué los márgenes automáticos alinean botones sin hacks.
+  * [Kevin Powell: flex-grow, flex-shrink, and flex-basis explained](https://www.youtube.com/watch?v=F3_m_6uUq0s) - Desarmado paso a paso de la propiedad compuesta `flex: 1`.
+
