@@ -1,0 +1,123 @@
+/* ============================================================ */
+/* ZONA PROTEGIDA DEL SISTEMA: Variables y reseteo básico       */
+/* NO MODIFICAR ESTE BLOQUE                                    */
+/* ============================================================ */
+:root {
+  /* Paleta Editorial Cálido */
+  --color-bg: #fafaf9;          /* Fondo arena suave de la página */
+  --color-card-bg: #ffffff;     /* Fondo blanco puro de la tarjeta */
+  --color-text-main: #1c1917;   /* Texto oscuro de alto contraste */
+  --color-text-muted: #78716c;  /* Texto gris cálido para descripciones */
+  --color-border: #e7e5e4;      /* Borde sutil para delimitar cajas */
+  --color-accent: #c2410c;      /* Terracota para enlaces destacados */
+  --color-accent-hover: #9a3412;
+
+  /* Tipografías */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Radios de borde sutiles */
+  --radius-card: 4px;
+  --radius-btn: 3px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ============================================================ */
+/* ZONA DE TRABAJO DEL ALUMNO                                   */
+/* Completá las consignas de la guía INSTRUCCIONES.md           */
+/* ============================================================ */
+
+/* Paso 3: Tarjeta Principal */
+.profile-card {
+  width: 100%;
+  /* ESCRIBÍ TU CÓDIGO AQUÍ: max-width, background-color, border, border-radius, padding, text-align */
+}
+
+/* Avatar / Foto de perfil */
+.profile-avatar {
+  /* ESCRIBÍ TU CÓDIGO AQUÍ: width, height, margin (centrado), border-radius, object-fit */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25rem;
+}
+
+/* Títulos y textos personales */
+.profile-name {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+.profile-role {
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.profile-bio {
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Paso 4: Lista de enlaces personales */
+.profile-links {
+  margin-bottom: 2rem;
+}
+
+.profile-link {
+  /* ESCRIBÍ TU CÓDIGO AQUÍ: display, padding, margin-bottom, color, border, border-radius, transition */
+}
+
+/* Nivel Desafío: Efecto al pasar el mouse (:hover) */
+.profile-link:hover {
+  /* ESCRIBÍ TU CÓDIGO AQUÍ: background-color, color, border-color */
+}
+
+/* Nivel Desafío: Botón destacado */
+.profile-link-featured {
+  /* ESCRIBÍ TU CÓDIGO AQUÍ: fondo terracota directo */
+}
+
+.profile-link-featured:hover {
+  /* ESCRIBÍ TU CÓDIGO AQUÍ */
+}
+
+/* Pie de tarjeta */
+.profile-footer {
+  border-top: 1px solid var(--color-border);
+  padding-top: 1.25rem;
+}
+
+.profile-location {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}

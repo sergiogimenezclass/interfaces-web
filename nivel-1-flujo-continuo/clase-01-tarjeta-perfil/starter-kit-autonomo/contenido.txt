@@ -1,0 +1,26 @@
+================================================================
+CONTENIDO CRUDO PARA LA CLASE 01 (MODO AUTÓNOMO)
+Copiá y pegá estos textos en tu propio archivo HTML semántico:
+================================================================
+
+[Foto de perfil de muestra]:
+https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=80
+Texto alternativo sugerido: Foto de perfil de Clara Mendizábal
+
+[Nombre principal]:
+Clara Mendizábal
+
+[Especialidad / Rol]:
+Diseñadora Editorial & Maquetadora Web
+
+[Biografía / Descripción]:
+Creo identidades visuales y sitios web pensados para leer con calma y sin distracciones.
+
+[Enlaces a botones]:
+1. Ver mi Portfolio 2027 -> https://ejemplo.com/portfolio
+2. Perfil en LinkedIn -> https://linkedin.com
+3. Proyectos en GitHub -> https://github.com
+4. Escribirme un Email -> mailto:hola@ejemplo.com
+
+[Pie de tarjeta]:
+📍 Buenos Aires, Argentina · Disponible para proyectos
