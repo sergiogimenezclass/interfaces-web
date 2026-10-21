@@ -13,6 +13,7 @@
   
   <!-- Estilos del Portal (Arquetipo Editorial Cálido) -->
   <link rel="stylesheet" href="css/portal.css">
+  <link rel="stylesheet" href="css/prism.min.css">
 </head>
 <body>
 
@@ -658,14 +659,14 @@ clase-XX/
         <!-- Panel 2: Código HTML -->
         <section class="viewer-pane" data-viewer-pane="html" aria-label="Código fuente HTML">
           <div class="code-wrapper">
-            <pre class="code-block" id="code-html"></pre>
+            <pre class="code-block language-html"><code class="language-html" id="code-html"></code></pre>
           </div>
         </section>
 
         <!-- Panel 3: Código CSS -->
         <section class="viewer-pane" data-viewer-pane="css" aria-label="Código fuente CSS">
           <div class="code-wrapper">
-            <pre class="code-block" id="code-css"></pre>
+            <pre class="code-block language-css"><code class="language-css" id="code-css"></code></pre>
           </div>
         </section>
 
@@ -673,6 +674,8 @@ clase-XX/
     </div>
   </div>
 
+  <!-- Resaltado de Sintaxis Offline -->
+  <script src="js/prism.min.js"></script>
   <!-- Lógica Vanilla del Portal -->
   <script src="js/portal.js"></script>
 </body>

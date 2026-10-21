@@ -464,6 +464,18 @@ body {
   text-align: center;
 }
 
+.code-wrapper pre[class*="language-"],
+.code-wrapper code[class*="language-"] {
+  background: transparent !important;
+  font-family: var(--font-mono) !important;
+  font-size: 0.8125rem !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
 @media (max-width: 640px) {
   .portal-title {
     font-size: 2rem;

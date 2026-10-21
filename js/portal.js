@@ -213,7 +213,7 @@
       previewFrame.src = clase.htmlPath;
     }
 
-    // Cargar Código HTML con fetch nativo
+    // Cargar Código HTML con fetch nativo y colorear sintaxis
     if (codeHtml && clase.htmlPath) {
       codeHtml.textContent = 'Cargando código HTML...';
       fetch(clase.htmlPath)
@@ -222,14 +222,18 @@
           return res.text();
         })
         .then(html => {
-          codeHtml.textContent = html;
+          if (window.Prism && Prism.languages.html) {
+            codeHtml.innerHTML = Prism.highlight(html, Prism.languages.html, 'html');
+          } else {
+            codeHtml.textContent = html;
+          }
         })
         .catch(err => {
           codeHtml.textContent = `Error al cargar: ${err.message}`;
         });
     }
 
-    // Cargar Código CSS con fetch nativo
+    // Cargar Código CSS con fetch nativo y colorear sintaxis
     if (codeCss && clase.cssPath) {
       codeCss.textContent = 'Cargando estilos CSS...';
       fetch(clase.cssPath)
@@ -238,7 +242,11 @@
           return res.text();
         })
         .then(css => {
-          codeCss.textContent = css;
+          if (window.Prism && Prism.languages.css) {
+            codeCss.innerHTML = Prism.highlight(css, Prism.languages.css, 'css');
+          } else {
+            codeCss.textContent = css;
+          }
         })
         .catch(err => {
           codeCss.textContent = `Error al cargar: ${err.message}`;
