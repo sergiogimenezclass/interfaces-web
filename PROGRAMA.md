@@ -79,16 +79,28 @@ Cada clase está estructurada en torno a una **interfaz real** y una **fricción
 ## 4. Matriz de Hitos y Entregables
 
 ```mermaid
-timeline
-    title Trayecto Anual: Hitos de Aprendizaje y Entregas
-    section Nivel 1: Flujo Continuo
-        Semana 04 : Hito 1: Dominio del Modelo de Caja (Box Model)
-        Semana 08 : Hito 2: Dominio de Flexbox (Tabla de Precios)
-        Semana 13 : Hito 3: Formularios accesibles y Tablas de datos
-        Semana 16 : Hito 4: Landing Page completa en Netlify Drop
-    section Nivel 2: Pantalla de App
-        Semana 17 : Hito 5: Primer commit en GitHub
-        Semana 22 : Hito 6: Shell de App 100vh con CSS Grid
-        Semana 27 : Hito 7: Sistema de Tokens y Dark Mode funcional
-        Semana 32 : Hito 8: SaaS Dashboard en GitHub Pages (Demo Day)
+flowchart TD
+    subgraph N1["NIVEL 1: Flujo Continuo (Semanas 01 a 16)"]
+        direction LR
+        H1["Semana 04<br/><b>Hito 1: Box Model</b><br/>Banner CTA & border-box"] --> H2["Semana 08<br/><b>Hito 2: Flexbox</b><br/>Pricing Table"] --> H3["Semana 13<br/><b>Hito 3: Formularios & Tablas</b><br/>Captura estructurada"] --> H4["Semana 16<br/><b>Hito 4: Producción Nivel 1</b><br/>Landing Page en Netlify"]
+    end
+
+    subgraph N2["NIVEL 2: Pantalla de App (Semanas 17 a 32)"]
+        direction LR
+        H5["Semana 17<br/><b>Hito 5: Control de Versiones</b><br/>Git local & GitHub"] --> H6["Semana 22<br/><b>Hito 6: Shell 100vh</b><br/>Grid Areas & Scroll"] --> H7["Semana 27<br/><b>Hito 7: Design Tokens</b><br/>Dark Mode persistente"] --> H8["Semana 32<br/><b>Hito 8: Demo Day</b><br/>SaaS Dashboard en GitHub Pages"]
+    end
+
+    H4 --> H5
 ```
+
+| Semana | Nivel | Hito Pedagógico | Interfaz Entregable | Criterio de Aprobación |
+| :---: | :---: | :--- | :--- | :--- |
+| **04** | 1 | **Hito 1: Dominio del Box Model** | Banner Promocional CTA | Cero desbordes, reseteo universal con `border-box` aplicado correctamente. |
+| **08** | 1 | **Hito 2: Motor Unidimensional** | Grilla de Precios (3 Planes) | Alturas de tarjetas emparejadas con `stretch` y botones anclados al fondo con `margin-top: auto`. |
+| **13** | 1 | **Hito 3: Estructuración y Datos** | Formulario accesible y Tabla | Vinculación estricta `<label for>` con `<input id>` y colapso de bordes de tabla. |
+| **16** | 1 | **Hito 4: Cierre de Nivel 1** | Landing Page Completa | URL pública activa en **Netlify Drop**, cero errores en W3C Validator y Lighthouse > 90 en Accesibilidad. |
+| **17** | 2 | **Hito 5: Flujo de Trabajo Profesional** | Tarjeta de Métricas | Historial de commits en terminal y repositorio remoto visible en GitHub. |
+| **22** | 2 | **Hito 6: Shell de Aplicación Fija** | Shell con Sidebar, Topbar y Main | Contenedor cerrado en `100vh` con scroll vertical confinado exclusivamente al panel principal. |
+| **27** | 2 | **Hito 7: Sistema de Tokens y Theming** | Dashboard con Modo Oscuro | Alternancia de paleta completa sin duplicar CSS, cambiando variables bajo `[data-theme="dark"]`. |
+| **32** | 2 | **Hito 8: Proyecto Integrador Final** | SaaS Dashboard Completo | Despliegue continuo activo en **GitHub Pages**, responsive Mobile-First y presentación en Demo Day. |
+
