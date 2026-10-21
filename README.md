@@ -1,44 +1,76 @@
 # Trayecto Anual de Diseño Web por Proyectos (2027)
 
-> **Diseño y Maquetación Web Profesional con HTML5, CSS3 y JS Vanilla**  
-> 32 semanas · 2 niveles semestrales · 1 clase semanal de 180 min · Aprendizaje Basado en Proyectos (PBL)
+> **Diseño y Maquetación Web Profesional con HTML5, CSS3 y JavaScript Vanilla**  
+> 32 semanas · 2 niveles semestrales · 1 clase semanal de 180 min · Proyectos reales desde el primer día
 
 ---
 
-## 🗺️ Mapa de Documentación y Recursos
+## 📚 Documentación Central
 
-| Documento / Recurso | Descripción |
-| :--- | :--- |
-| 📖 [**`METODOLOGIA.md`**](METODOLOGIA.md) | **Manifiesto y Marco Pedagógico:** Enfoque contra-teórico, estructura de sesión (180 min), protocolo de debugging, dynamic scaffolding y gestión de JS como caja negra. |
-| 📋 [**`PROGRAMA.md`**](PROGRAMA.md) | **Malla Curricular Completa (32 Clases):** Desglose exhaustivo de las 16 clases de Nivel 1 (*Flujo Continuo*) y las 16 clases de Nivel 2 (*Pantalla de Aplicación*), con problemas visuales, conceptos técnicos y arquetipos. |
-| 🛠️ [**Skill: `frontend-standards`**](.agents/skills/frontend-standards/SKILL.md) | **Habilidad para el Asistente:** Catálogo de 4 arquetipos visuales, unidades de medida permitidas (`rem`/`px`), BEM simplificado, reset moderno y protocolo de consulta obligatoria. |
-| 📦 [**Clase de Muestra: Clase 08**](nivel-1-flujo-continuo/clase-08-tabla-de-precios/) | **Paquete Completo:** [Ficha Técnica](nivel-1-flujo-continuo/clase-08-tabla-de-precios/FICHA-TECNICA.md), [Instrucciones Escalonadas](nivel-1-flujo-continuo/clase-08-tabla-de-precios/INSTRUCCIONES.md) y [Starter Kit](nivel-1-flujo-continuo/clase-08-tabla-de-precios/starter-kit/). |
-| 🎨 [**Demo de Arquetipos Visuales**](nivel-1-flujo-continuo/clase-08-tabla-de-precios/comparativa-arquetipos/) | **Comparativa Interactiva:** La misma interfaz comercial presentada en los 4 arquetipos (*SaaS*, *Editorial*, *Neo-Brutalismo* y *Fintech*) con botón selector de archivo CSS en vivo. |
+* 📖 [**`METODOLOGIA.md`**](METODOLOGIA.md) — Cómo enseñamos, rutina de clase (180 min), protocolo de ayuda con DevTools (`F12`), andamiaje a elección y JavaScript en 3 pasos.
+* 📋 [**`PROGRAMA.md`**](PROGRAMA.md) — Plan detallado de las 32 clases: problema real que resuelve cada proyecto, herramientas de HTML/CSS y arquetipo visual sugerido.
+* 🛠️ [**Skill: `frontend-standards`**](.agents/skills/frontend-standards/SKILL.md) — Estándares técnicos del proyecto: catálogo de arquetipos, unidades permitidas, BEM simplificado y estructura obligatoria por clase.
+* 🚀 [**`GUIA-DOCENTE-RELEASES.md`**](GUIA-DOCENTE-RELEASES.md) — Instructivo paso a paso para publicar cada clase oficial desde la interfaz web de GitHub con 3 clics.
 
 ---
 
-## ⚡ Estructura del Trayecto
+## 🗂️ Índice General de Clases
 
-```text
-planificacion2027/
-├── README.md                           # Índice general del repositorio
-├── METODOLOGIA.md                      # Paradigma pedagógico y dinámica de clase
-├── PROGRAMA.md                         # Malla curricular de 32 clases detalladas
-├── .agents/skills/frontend-standards/  # Skill con estándares y arquetipos visuales
-│   └── SKILL.md
-└── nivel-1-flujo-continuo/
-    └── clase-08-tabla-de-precios/
-        ├── FICHA-TECNICA.md            # Ficha técnica pedagógica
-        ├── INSTRUCCIONES.md            # Consignas escalonadas (Base + Pro)
-        ├── starter-kit/                # Código inicial para el alumno
-        │   ├── index.html
-        │   └── css/styles.css
-        └── comparativa-arquetipos/     # Demostración de los 4 arquetipos visuales
-            ├── index.html
-            └── css/
-                ├── base.css
-                ├── saas-moderno.css
-                ├── editorial-calido.css
-                ├── neobrutalismo.css
-                └── industrial-fintech.css
-```
+Cada clase incluye su **Ficha Técnica**, su guía de **Instrucciones**, la **Versión Terminada** (para desarmar y comparar) y los dos modos de trabajo: **Modo Guiado** y **Modo Autónomo**.
+
+### Nivel 1: Páginas Web y Sitios de Lectura (Clases 01 a 16)
+*La web que se lee con scroll vertical natural. Despliegue en producción con **Netlify Drop**.*
+
+| # | Proyecto / Interfaz | Estilo Visual | Solución Lista | Material de Trabajo | Guía Paso a Paso | Estado |
+| :---: | :--- | :--- | :---: | :---: | :---: | :---: |
+| **01** | [**Tarjeta de Perfil (Link in Bio)**](nivel-1-flujo-continuo/clase-01-tarjeta-perfil/) | Editorial Cálido | [🟢 Ver Demo](nivel-1-flujo-continuo/clase-01-tarjeta-perfil/version-terminada/index.html) | [Modo Guiado](nivel-1-flujo-continuo/clase-01-tarjeta-perfil/starter-kit-guiado/) · [Autónomo](nivel-1-flujo-continuo/clase-01-tarjeta-perfil/starter-kit-autonomo/) | [📖 Instrucciones](nivel-1-flujo-continuo/clase-01-tarjeta-perfil/INSTRUCCIONES.md) | ✅ **Listo** |
+| **02** | Ficha de Receta Culinaria | Editorial Cálido | — | — | — | ⏳ *En preparación* |
+| **03** | Tarjeta de Producto E-Commerce | SaaS Moderno | — | — | — | ⏳ *En preparación* |
+| **04** | Banner Promocional CTA | Neo-Brutalismo | — | — | — | ⏳ *En preparación* |
+| **05** | Artículo Editorial con Citas | Editorial Cálido | — | — | — | ⏳ *En preparación* |
+| **06** | Barra de Navegación (Topbar) | SaaS Moderno | — | — | — | ⏳ *En preparación* |
+| **07** | Barra de Herramientas y Acciones | Industrial / Fintech | — | — | — | ⏳ *En preparación* |
+| **08** | Tabla de Precios y Planes | SaaS Moderno | — | — | — | ⏳ *En preparación* |
+| **09** | Showcase / Galería de Trabajos | Neo-Brutalismo | — | — | — | ⏳ *En preparación* |
+| **10** | Catálogo con Filtros | SaaS Moderno | — | — | — | ⏳ *En preparación* |
+| **11** | Formulario de Registro / Newsletter | SaaS Moderno | — | — | — | ⏳ *En preparación* |
+| **12** | Formulario Complejo de Cotización | Editorial Cálido | — | — | — | ⏳ *En preparación* |
+| **13** | Tabla de Posiciones Deportivas | Industrial / Fintech | — | — | — | ⏳ *En preparación* |
+| **14** | Landing Page Completa (Maquetación) | A elección | — | — | — | ⏳ *En preparación* |
+| **15** | Landing Page Completa (Interactiva) | A elección | — | — | — | ⏳ *En preparación* |
+| **16** | Despliegue en Netlify y Auditoría | Libre | — | — | — | ⏳ *En preparación* |
+
+---
+
+### Nivel 2: Pantallas de Aplicaciones, Paneles y Sistemas de Diseño (Clases 17 a 32)
+*Pantallas de aplicación interactivas, control de versiones con Git y despliegue automatizado con **GitHub Pages**.*
+
+| # | Proyecto / Interfaz | Estilo Visual | Solución Lista | Material de Trabajo | Guía Paso a Paso | Estado |
+| :---: | :--- | :--- | :---: | :---: | :---: | :---: |
+| **17** | Setup con Git y Tarjeta de Métricas | Industrial / Fintech | — | — | — | ⏳ *En preparación* |
+| **18** | Tarjeta con Notificación Flotante | SaaS Moderno | — | — | — | ⏳ *En preparación* |
+| **19** | Menú Fijo con Notificaciones (Sticky) | Industrial / Fintech | — | — | — | ⏳ *En preparación* |
+| **20** | Mosaico de Fotos con CSS Grid | Neo-Brutalismo | — | — | — | ⏳ *En preparación* |
+| **21** | Grilla Estilo Bento (Apple/Linear) | SaaS Moderno | — | — | — | ⏳ *En preparación* |
+| **22** | Estructura Base de App (100dvh) | Industrial / Fintech | — | — | — | ⏳ *En preparación* |
+| **23** | Dashboard de Métricas (Grid + Flex) | Industrial / Fintech | — | — | — | ⏳ *En preparación* |
+| **24** | Grilla Adaptable sin Media Queries | SaaS Moderno | — | — | — | ⏳ *En preparación* |
+| **25** | Menú Lateral Móvil (Mobile-First) | SaaS Moderno | — | — | — | ⏳ *En preparación* |
+| **26** | Sistema de Tokens y Variables CSS | Libre | — | — | — | ⏳ *En preparación* |
+| **27** | Dashboard con Modo Oscuro | Industrial / Fintech | — | — | — | ⏳ *En preparación* |
+| **28** | Iconos SVG y Multimedia Nativa | Editorial Cálido | — | — | — | ⏳ *En preparación* |
+| **29** | Formulario con Validación Visual | SaaS Moderno | — | — | — | ⏳ *En preparación* |
+| **30** | Factura Comercial para Impresión | Editorial Cálido | — | — | — | ⏳ *En preparación* |
+| **31** | Proyecto Integrador: App Web Completa | A elección | — | — | — | ⏳ *En preparación* |
+| **32** | Despliegue en GitHub Pages y Cierre | Libre | — | — | — | ⏳ *En preparación* |
+
+---
+
+## 💻 Cómo utilizar este repositorio
+
+1. **Para docentes:**
+   * Abrí la carpeta `version-terminada/` de la clase del día para proyectar la interfaz funcionando y desarmarla en vivo con DevTools (`F12`) durante los primeros 35 minutos.
+2. **Para alumnos:**
+   * **Modo Guiado:** Si querés avanzar con plantilla y comentarios que te guían paso a paso, abrí `starter-kit-guiado/`.
+   * **Modo Autónomo:** Si preferís ponerte a prueba desde una hoja en blanco, abrí `starter-kit-autonomo/` y seguí la consigna con los textos crudos.
+   * Abrí `INSTRUCCIONES.md` para seguir el paso a paso del Nivel Base y el Nivel Desafío.
