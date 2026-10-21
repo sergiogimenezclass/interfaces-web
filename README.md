@@ -9,36 +9,29 @@
 
 | Documento / Recurso | Descripción |
 | :--- | :--- |
-| 📖 [**`METODOLOGIA.md`**](METODOLOGIA.md) | **Manifiesto y Marco Pedagógico:** Enfoque contra-teórico, estructura de sesión (180 min), protocolo de debugging, dynamic scaffolding y gestión de JS como caja negra. |
-| 📋 [**`PROGRAMA.md`**](PROGRAMA.md) | **Malla Curricular Completa (32 Clases):** Desglose exhaustivo de las 16 clases de Nivel 1 (*Flujo Continuo*) y las 16 clases de Nivel 2 (*Pantalla de Aplicación*), con problemas visuales, conceptos técnicos y arquetipos. |
-| 🛠️ [**Skill: `frontend-standards`**](.agents/skills/frontend-standards/SKILL.md) | **Habilidad para el Asistente:** Catálogo de 4 arquetipos visuales, unidades de medida permitidas (`rem`/`px`), BEM simplificado, reset moderno y protocolo de consulta obligatoria. |
-| 📦 [**Clase de Muestra: Clase 08**](nivel-1-flujo-continuo/clase-08-tabla-de-precios/) | **Paquete Completo:** [Ficha Técnica](nivel-1-flujo-continuo/clase-08-tabla-de-precios/FICHA-TECNICA.md), [Instrucciones Escalonadas](nivel-1-flujo-continuo/clase-08-tabla-de-precios/INSTRUCCIONES.md) y [Starter Kit](nivel-1-flujo-continuo/clase-08-tabla-de-precios/starter-kit/). |
-| 🎨 [**Demo de Arquetipos Visuales**](nivel-1-flujo-continuo/clase-08-tabla-de-precios/comparativa-arquetipos/) | **Comparativa Interactiva:** La misma interfaz comercial presentada en los 4 arquetipos (*SaaS*, *Editorial*, *Neo-Brutalismo* y *Fintech*) con botón selector de archivo CSS en vivo. |
+| 📖 [**`METODOLOGIA.md`**](METODOLOGIA.md) | **Propuesta de Trabajo:** Cómo enseñamos, rutina de clase (180 min), protocolo de ayuda con DevTools, los dos modos de andamiaje y JavaScript en 3 pasos. |
+| 📋 [**`PROGRAMA.md`**](PROGRAMA.md) | **Plan de Clases (32 Proyectos):** Desglose clase por clase de Nivel 1 (*Páginas de Lectura*) y Nivel 2 (*Pantallas de Aplicación*), con problemas reales, herramientas y arquetipos. |
+| 🛠️ [**Skill: `frontend-standards`**](.agents/skills/frontend-standards/SKILL.md) | **Directivas para el Asistente:** Catálogo de 4 arquetipos visuales, unidades `rem`/`px`, BEM simplificado, reset moderno y **estructura canónica obligatoria por clase**. |
+| 🚀 [**Clase 01: Tarjeta de Perfil**](nivel-1-flujo-continuo/clase-01-tarjeta-perfil/) | **Primera Clase Completa:** Ficha técnica, instrucciones, versión terminada y starter kits (guiado y autónomo) en estilo Editorial Cálido. |
+| 📦 [**Clase 08: Tabla de Precios**](nivel-1-flujo-continuo/clase-08-tabla-de-precios/) | **Muestra de Nivel Intermedio:** Ficha técnica, instrucciones, starter kit y comparativa interactiva de los 4 arquetipos. |
 
 ---
 
-## ⚡ Estructura del Trayecto
+## ⚡ Estructura Canónica de Cada Clase
+
+Cada clase del trayecto cuenta obligatoriamente con estos 2 documentos y 3 carpetas:
 
 ```text
-planificacion2027/
-├── README.md                           # Índice general del repositorio
-├── METODOLOGIA.md                      # Paradigma pedagógico y dinámica de clase
-├── PROGRAMA.md                         # Malla curricular de 32 clases detalladas
-├── .agents/skills/frontend-standards/  # Skill con estándares y arquetipos visuales
-│   └── SKILL.md
-└── nivel-1-flujo-continuo/
-    └── clase-08-tabla-de-precios/
-        ├── FICHA-TECNICA.md            # Ficha técnica pedagógica
-        ├── INSTRUCCIONES.md            # Consignas escalonadas (Base + Pro)
-        ├── starter-kit/                # Código inicial para el alumno
-        │   ├── index.html
-        │   └── css/styles.css
-        └── comparativa-arquetipos/     # Demostración de los 4 arquetipos visuales
-            ├── index.html
-            └── css/
-                ├── base.css
-                ├── saas-moderno.css
-                ├── editorial-calido.css
-                ├── neobrutalismo.css
-                └── industrial-fintech.css
+clase-XX-nombre-proyecto/
+├── FICHA-TECNICA.md            # Datos de la sesión, problema visual, boceto de cajas y preguntas
+├── INSTRUCCIONES.md            # Guía del alumno: Nivel Base, Desafío, Reto semanal y Biblioteca MDN
+├── version-terminada/          # Meta visual 100% resuelta para proyectar, desarmar y comparar
+│   ├── index.html
+│   └── css/styles.css
+├── starter-kit-guiado/          # Modo asistido: HTML completo con comentarios guiados en el CSS
+│   ├── index.html
+│   └── css/styles.css
+└── starter-kit-autonomo/        # Modo sin andamiaje: textos crudos y especificación para hacer desde cero
+    ├── contenido.txt
+    └── CONSIGNA-AUTONOMA.md
 ```

@@ -69,11 +69,22 @@ Cada sesión de 180 minutos sigue una rutina clara y predecible:
 
 | Bloque | Tiempo | Momento | Qué hacemos en el aula |
 | :---: | :---: | :--- | :--- |
-| **1** | `00:00 - 00:35` | **Apertura y Desarmado** | Vemos la pantalla que vamos a construir funcionando en vivo. Boceto de cajas en Excalidraw (5 min) e inspección en vivo de los estilos con el navegador (`F12`). |
-| **2** | `00:35 - 00:40` | **Elección de Modo** | Cada uno elige si arranca en **Modo Guiado** (con plantilla) o en **Modo Autónomo** (hoja en blanco). |
-| **3** | `00:40 - 02:25` | **Taller de Práctica** | Trabajo individual o en duplas sobre la guía de la clase. El docente recorre mesa por mesa ayudando a destrabar bloqueos puntuales. |
+| **1** | `00:00 - 00:35` | **Apertura y Desarmado** | Proyectamos y desarmamos la **`version-terminada`** en vivo con DevTools (`F12`). Boceto rápido de cajas en Excalidraw (5 min). |
+| **2** | `00:35 - 00:40` | **Elección de Modo** | Cada uno elige su carpeta de trabajo: **`starter-kit-guiado`** (con plantilla) o **`starter-kit-autonomo`** (hoja en blanco). |
+| **3** | `00:40 - 02:25` | **Taller de Práctica** | Trabajo individual o en duplas sobre la guía `INSTRUCCIONES.md`. El docente recorre mesa por mesa ayudando a destrabar bloqueos. |
 | **4** | `02:25 - 02:40` | **Pausa** | Descanso para despejar la vista, tomar un café y desconectar de la pantalla. |
 | **5** | `02:40 - 03:00` | **Puesta en Común y Cierre** | Charla en ronda de 20 minutos: qué logró completar cada uno, qué propiedad se resistió y cómo encontramos la solución. |
+
+### La estructura de carpetas que acompaña cada clase:
+
+```text
+clase-XX/
+├── FICHA-TECNICA.md            # Ficha pedagógica de la sesión para el docente y el alumno
+├── INSTRUCCIONES.md            # Guía paso a paso: Nivel Base, Desafío, Reto semanal y Biblioteca MDN
+├── version-terminada/          # La meta visual 100% resuelta para desarmar y comparar en paralelo
+├── starter-kit-guiado/          # Plantilla con HTML listo y comentarios que indican dónde escribir
+└── starter-kit-autonomo/        # Texto crudo y especificación para maquetar desde cero
+```
 
 ---
 

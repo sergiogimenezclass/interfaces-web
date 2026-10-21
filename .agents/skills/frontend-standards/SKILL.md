@@ -25,6 +25,27 @@ Antes de escribir, maquetar o generar archivos HTML y CSS para una clase o inter
 
 ---
 
+## 📁 Estructura Canónica Obligatoria para Cada Clase
+
+Toda clase generada en el trayecto curricular DEBE crearse obligatoriamente con estos 2 documentos y 3 carpetas:
+
+```text
+clase-XX-nombre-proyecto/
+├── FICHA-TECNICA.md            # Datos pedagógicos, problema resuelto, boceto y preguntas de cierre
+├── INSTRUCCIONES.md            # Guía del alumno: Nivel Base, Nivel Desafío, Reto Semanal y Biblioteca MDN
+├── version-terminada/          # Meta visual 100% resuelta para desarmar en clase y comparar
+│   ├── index.html
+│   └── css/styles.css
+├── starter-kit-guiado/          # Modo asistido: HTML completo con comentarios guiados en el CSS
+│   ├── index.html
+│   └── css/styles.css
+└── starter-kit-autonomo/        # Modo sin andamiaje: textos crudos y especificación para hacer desde cero
+    ├── contenido.txt
+    └── CONSIGNA-AUTONOMA.md
+```
+
+---
+
 ## 1. Catálogo de Arquetipos de Diseño Visual
 
 Al consultar al usuario o iniciar una interfaz, utilizá este catálogo:
