@@ -1,163 +1,155 @@
-# Trayecto Anual de Diseño Web por Proyectos: Guía Metodológica
+# Cómo enseñamos y aprendemos: Nuestra Propuesta de Trabajo
 
-> **Una propuesta contra-teórica, práctica y orientada a interfaces reales para aprender a construir la web moderna desde cero absoluto.**
-
----
-
-## 1. El Problema de la Enseñanza Tradicional
-
-La mayoría de los cursos de desarrollo web tradicionales cometen dos errores fundamentales que frustran a los estudiantes adultos:
-
-1. **La trampa enciclopédica:** Enseñar listas interminables de etiquetas HTML y propiedades CSS en abstracto, sin que el alumno entienda para qué sirven en una pantalla real.
-2. **El salto al vacío sin andamiaje:** Explicar conceptos aislados durante 90 minutos y luego pedirle al estudiante: *"Ahora diseñá una página desde cero"*.
-
-El resultado habitual es bloqueo cognitivo, dependencia crónica del docente y sensación de incapacidad frente a la "pantalla en blanco".
+> **Un recorrido 100% práctico, basado en proyectos reales y pensado para aprender a diseñar y construir la web moderna desde cero absoluto.**
 
 ---
 
-## 2. Los Cuatro Pilares del Método
+## 1. Por qué los cursos tradicionales suelen frustrar a quienes arrancan de cero
+
+La mayoría de los cursos de programación y diseño web cometen dos errores comunes que generan abandono y bloqueo:
+
+1. **Aprender etiquetas de memoria no sirve para diseñar:** Estudiar de memoria listas de 40 etiquetas HTML o propiedades de CSS en abstracto aburre y desmotiva. Saber qué significa una etiqueta en un apunte teórico no te enseña a resolver por qué dos botones quedan desalineados en una pantalla real.
+2. **El bloqueo frente a la hoja en blanco:** Explicar conceptos aislados durante horas y después decirle al alumno *"ahora hacé una página web completa desde cero"* paraliza. Sin un método que te acompañe paso a paso, no sabés por dónde arrancar.
+
+---
+
+## 2. Los cuatro principios de nuestras clases
 
 ```mermaid
 flowchart TD
-    A["1. Contra-Teoría Radical<br/><i>(El concepto es la respuesta a un problema visual)</i>"] --> B["2. Micro-Diseño y Use-Modify-Create<br/><i>(Pensar en cajas antes de tocar el teclado)</i>"]
-    B --> C["3. Andamiaje a Elección<br/><i>(Modo Guiado vs. Modo Autónomo)</i>"]
-    C --> D["4. JS Quirúrgico: El Patrón de 3 Pasos<br/><i>(Interactividad del DOM transparente sin algoritmia)</i>"]
+    A["1. El código resuelve un problema visual<br/><i>(La teoría aparece solo cuando hace falta)</i>"] --> B["2. Boceto rápido y desarmado de pantallas<br/><i>(Pensar en cajas antes de tocar el teclado)</i>"]
+    B --> C["3. Elegí tu nivel de ayuda<br/><i>(Modo Guiado o Modo Autónomo)</i>"]
+    C --> D["4. JavaScript simple y transparente<br/><i>(El interruptor de 3 pasos sin complicarse con matemáticas)</i>"]
 ```
 
-### Pilar 1: Contra-Teoría Radical
-**Los conceptos no se definen; se descubren resolviendo una fricción visual.**
-* En lugar de dictar una clase teórica sobre `box-sizing: border-box`, el alumno agrega `padding: 20px` a una tarjeta de 300px y observa cómo la tarjeta se ensancha a 340px y rompe la grilla. En ese instante de incomodidad visual se introduce `border-box`: como la solución técnica a un dolor tangible.
-* No se explica `margin-top: auto` con diapositivas: se usa cuando los botones de tres tarjetas quedan bailando a diferentes alturas y se necesita clavarlos contra el piso del contenedor.
+### Principio 1: El código es la respuesta a un problema visual
+**Acá no memorizamos definiciones; descubrimos las herramientas cuando las necesitamos.**
+* No te damos una clase teórica sobre `box-sizing: border-box`. Primero le agregás espacio interior (`padding: 20px`) a una tarjeta y ves con tus propios ojos cómo se ensancha de más y se rompe la grilla. En ese momento exacto descubrimos la regla que lo soluciona.
+* No explicamos `margin-top: auto` con diapositivas: lo usamos cuando los botones de tres tarjetas quedan bailando a distintas alturas y necesitamos que queden todos clavados en la misma línea al fondo.
 
-### Pilar 2: Micro-Diseño Previo y Ciclo *Use - Modify - Create*
-Antes de escribir una sola línea de código, el alumno aprende a **pensar en cajas** mediante un boceto de 5 minutos:
-* **Herramientas recomendadas:** [Excalidraw](https://excalidraw.com) o [tldraw](https://tldraw.com) (digitales, gratuitas, abren en el navegador sin login) o papel y lápiz con cronómetro estricto.
-* **Prevención de la trampa del dibujo:** Queda prohibido "ilustrar" o dibujar detalles artísticos. El ejercicio consiste exclusivamente en dibujar **cajas rectangulares anidadas** (caja padre y cajas hijas). *"Si no podés dibujarlo como cajas en 3 minutos, no lo vas a poder maquetar en CSS"*.
-* **El ciclo en el código:**
-  1. **USE (Usar / Observar):** Analizar la interfaz terminada con DevTools.
-  2. **MODIFY (Modificar guiado):** Alterar variables, propiedades y espaciados sobre el código base.
-  3. **CREATE (Crear autónomo):** Extender la interfaz con nuevos componentes o estados.
+### Principio 2: Boceto rápido y desarmado de pantallas
+Antes de escribir código en el teclado, aprendemos a **pensar en cajas organizadas**:
+* **Herramientas ágiles:** Usamos herramientas online gratuitas y sin registro como [Excalidraw](https://excalidraw.com) o [tldraw](https://tldraw.com) (o papel y lápiz con un límite estricto de 5 minutos).
+* **Prohibido el dibujo artístico:** No perdemos tiempo ilustrando detalles ni sombras a mano. El ejercicio es únicamente dibujar rectángulos anidados (cajas padre y cajas hijas). *"Si podés dibujarlo como cajas ordenadas en 3 minutos, lo podés maquetar en código sin problemas"*.
+* **El camino de trabajo:**
+  1. **Mirar y desarmar:** Abrimos la pantalla terminada con el inspector del navegador (DevTools) para ver qué hay detrás de escena.
+  2. **Modificar:** Cambiamos valores, colores y medidas para entender qué pasa cuando tocamos cada cosa.
+  3. **Crear:** Agregamos secciones nuevas, tarjetas o componentes con nuestro propio criterio.
 
-### Pilar 3: Andamiaje a Elección (*Choose Your Scaffold*)
-Para respetar los distintos ritmos de aprendizaje de los adultos sin generar falsa sensación de competencia ni frustración, cada clase ofrece dos modalidades de trabajo:
-* **Modo Guiado (Con Andamiaje):** Para quienes necesitan red de contención. Incluye el Starter Kit con la estructura HTML resuelta y zonas de trabajo delimitadas mediante comentarios.
-* **Modo Autónomo (Sin Andamiaje):** Para quienes eligen desafiarse. Incluye únicamente un archivo `contenido.txt` con los textos crudos y la captura visual de referencia. El alumno abre un archivo vacío, genera su HTML semántico con Emmet (`!`) y escribe sus hojas de estilo desde cero.
+### Principio 3: Elegí tu nivel de ayuda en cada clase
+Cada persona tiene su propio ritmo y no todos los días estamos igual. Por eso, en cada clase vos elegís cómo querés trabajar:
+* **Modo Guiado (Con plantilla asistida):** Si querés avanzar seguro y con red de contención. Descargás una carpeta que ya tiene el HTML escrito y comentarios claros en el CSS que te dicen exactamente en qué renglones escribir tu código.
+* **Modo Autónomo (Desde la hoja en blanco):** Si querés ponerte a prueba y volar solo. Te damos únicamente un archivo con los textos crudos y la imagen de diseño terminada para que abras un archivo vacío y construyas todo desde cero.
 
-### Pilar 4: JavaScript Quirúrgico (El Patrón de los 3 Pasos)
-En lugar de una "caja negra" mágica que el alumno copia a ciegas y no sabe reparar si falla, o de un curso pesado de algoritmia que devora semanas, se enseña **JavaScript orientado a eventos del DOM**, basado en un único patrón transparente:
+### Principio 4: JavaScript simple y transparente (El interruptor de 3 pasos)
+Para darle movimiento a la web (abrir un menú en celulares, alternar un modo oscuro o mostrar una ventana modal) no hace falta estudiar meses de programación compleja, variables matemáticas ni bucles.
+
+Usamos un patrón de **3 pasos claros** que funciona exactamente como un interruptor de luz:
 
 ```javascript
-// 1. AGARRAR el elemento de la pantalla
-const toggleBtn = document.querySelector('.navbar-toggle');
-const menu = document.querySelector('.navbar-menu');
+// 1. ELEGIR el elemento de la pantalla
+const botonMenu = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.navbar-links');
 
 // 2. ESCUCHAR el clic del usuario
-toggleBtn.addEventListener('click', () => {
-  // 3. PRENDER / APAGAR una clase de CSS
+botonMenu.addEventListener('click', () => {
+  // 3. PRENDER / APAGAR una clase de estilos en CSS
   menu.classList.toggle('is-open');
 });
 ```
 
-* **Por qué funciona:** Con estas 3 líneas se resuelve el 95% de la interactividad del maquetador (menús hamburguesa, modales, pestañas, acordeones y alternadores de modo oscuro).
-* **Autonomía de debugging:** Si un botón no responde, el alumno sabe abrir la consola, revisar si el selector del `querySelector` coincide con su HTML y corregirlo en 30 segundos sin depender de la IA. La IA queda reservada únicamente para utilidades secundarias (ej. persistencia en `localStorage` o cálculos de precios).
+* **Por qué funciona:** Con este patrón resolvés el 95% de la interactividad de cualquier sitio web moderno conectando el clic del usuario con los estilos que ya sabés hacer en CSS.
+* **Si algo falla, sabés cómo arreglarlo:** Si el menú no abre, abrís la consola del navegador, revisás si el nombre del botón coincide con el que pusiste en el HTML y lo corregís en 30 segundos, sin depender de que una inteligencia artificial te adivine el código.
 
 ---
 
-## 3. Anatomía de una Sesión de Clase (180 Minutos)
+## 3. Cómo es una clase de 3 horas (Paso a paso)
 
-Cada clase de 3 horas reloj sigue una coreografía cronometrada y predecible:
+Cada sesión de 180 minutos sigue una rutina clara y predecible:
 
-| Bloque | Tiempo | Fase | ¿Qué ocurre en el aula? |
+| Bloque | Tiempo | Momento | Qué hacemos en el aula |
 | :---: | :---: | :--- | :--- |
-| **1** | `00:00 - 00:35` | **Apertura y Desarmado** | Demostración de interfaz terminada. Diagramación rápida de cajas en Excalidraw (5 min) + inspección de estilos en DevTools (`F12`). |
-| **2** | `00:35 - 00:40` | **Elección de Modalidad** | El alumno elige si descargará el Starter Kit en **Modo Guiado** o el reto en **Modo Autónomo**. |
-| **3** | `00:40 - 02:25` | **Taller de Práctica Asistida** | Trabajo individual o en parejas sobre `INSTRUCCIONES.md`. El docente actúa como tutor de mesa aplicando el protocolo de debugging previo a consultas. |
-| **4** | `02:25 - 02:40` | **Pausa Técnica** | Descanso obligatorio. Desconexión de pantallas para reducir la fatiga visual. |
-| **5** | `02:40 - 03:00` | **Standup Meeting de Cierre** | Ronda ágil de 20 minutos: qué componente se completó, qué propiedad o desborde generó bloqueo y cómo se resolvió. |
+| **1** | `00:00 - 00:35` | **Apertura y Desarmado** | Vemos la pantalla que vamos a construir funcionando en vivo. Boceto de cajas en Excalidraw (5 min) e inspección en vivo de los estilos con el navegador (`F12`). |
+| **2** | `00:35 - 00:40` | **Elección de Modo** | Cada uno elige si arranca en **Modo Guiado** (con plantilla) o en **Modo Autónomo** (hoja en blanco). |
+| **3** | `00:40 - 02:25` | **Taller de Práctica** | Trabajo individual o en duplas sobre la guía de la clase. El docente recorre mesa por mesa ayudando a destrabar bloqueos puntuales. |
+| **4** | `02:25 - 02:40` | **Pausa** | Descanso para despejar la vista, tomar un café y desconectar de la pantalla. |
+| **5** | `02:40 - 03:00` | **Puesta en Común y Cierre** | Charla en ronda de 20 minutos: qué logró completar cada uno, qué propiedad se resistió y cómo encontramos la solución. |
 
 ---
 
-## 4. El Protocolo Previo de Debugging
+## 4. Qué hacer cuando algo no se ve como querés (Protocolo de ayuda)
 
-Para erradicar la costumbre de levantar la mano al primer error sin pensar, el alumno debe aplicar este algoritmo antes de consultar al equipo docente:
+Antes de levantar la mano frustrado, te acostumbramos a usar el inspector del navegador con este caminito de 4 pasos que usan los profesionales todos los días:
 
 ```mermaid
 flowchart TD
-    Inicio["Mi diseño se rompió / No responde el estilo"] --> Paso1["1. Abrir DevTools (F12) e inspeccionar el elemento"]
-    Paso1 --> Paso2{"¿El contenedor tiene la insignia 'flex' o 'grid'?"}
-    Paso2 -- NO --> Sol1["Revisar si escribiste mal el selector o falta display: flex/grid"]
+    Inicio["Mi diseño se desacomodó o no responde"] --> Paso1["1. Clic derecho en el elemento > Inspeccionar (F12)"]
+    Paso1 --> Paso2{"¿El contenedor tiene la etiqueta 'flex' o 'grid'?"}
+    Paso2 -- NO --> Sol1["Revisar si escribiste mal el nombre de la clase en el CSS"]
     Paso2 -- SÍ --> Paso3{"¿Hay alguna propiedad con una raya tachada en Styles?"}
-    Paso3 -- SÍ --> Sol2["Corregir error tipográfico o regla con mayor especificidad"]
-    Paso3 -- NO --> Paso4{"¿El ancho se desborda?"}
-    Paso4 -- SÍ --> Sol3["Verificar si falta box-sizing: border-box o si los anchos suman > 100%"]
-    Paso4 -- NO --> Consulta["Si los 3 filtros fallaron: Levantar la mano y explicar qué intentaste"]
+    Paso3 -- SÍ --> Sol2["Tenés un error de tipeo o una regla más abajo la está tapando"]
+    Paso3 -- NO --> Paso4{"¿El contenido se desborda para el costado?"}
+    Paso4 -- SÍ --> Sol3["Revisar si te faltó box-sizing: border-box o si los anchos suman más del 100%"]
+    Paso4 -- NO --> Consulta["Si revisaste los 3 puntos y sigue trabado: Llamás al profe y le contás qué probaste"]
 ```
 
 ---
 
-## 5. El Criterio de Corte entre Niveles
+## 5. El camino en dos niveles
 
-El trayecto se estructura en dos semestres de 16 clases cada uno, diferenciados por su **modelo mental**:
+El año se organiza en dos semestres independientes y continuos:
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────┐
-│ NIVEL 1: PÁGINAS WEB DE FLUJO CONTINUO (Clases 01 a 16)                │
+│ NIVEL 1: PÁGINAS WEB Y SITIOS DE LECTURA (Clases 01 a 16)              │
 │                                                                        │
-│  • Modelo mental: Documento vertical de lectura y Scroll natural.       │
-│  • Núcleo: HTML Semántico, Modelo de Caja estricto y Flexbox (1D).     │
-│  • Interactividad: Patrón de 3 pasos JS para menús y acordeones.       │
-│  • Producción: Despliegue sin terminal mediante Netlify Drop.          │
+│  • La idea central: Páginas que se leen hacia abajo con scroll natural. │
+│  • Herramientas clave: HTML ordenado, Modelo de Caja y Flexbox.         │
+│  • Interactividad: El patrón de 3 pasos para menús y desplegables.     │
+│  • Publicación: Tu sitio publicado gratis en internet con Netlify Drop.│
 └────────────────────────────────────────────────────────────────────────┘
                                     │
                                     ▼
 ┌────────────────────────────────────────────────────────────────────────┐
-│ NIVEL 2: INTERFACES DE APLICACIÓN Y DASHBOARDS (Clases 17 a 32)        │
+│ NIVEL 2: APLICACIONES, PANELES Y SISTEMAS DE DISEÑO (Clases 17 a 32)   │
 │                                                                        │
-│  • Modelo mental: Cabina de control / Pantalla de app fija (100dvh).   │
-│  • Núcleo: Git/GitHub, Posicionamiento (capas), CSS Grid (2D) y Tokens.│
-│  • Regla de Viewport: Mobile-Scroll (natural) y Desktop-App (100dvh).  │
-│  • Salvaguarda Grid: min-width: 0 en columnas para evitar desbordes.   │
-│  • Producción: Despliegue automatizado continuo con GitHub Pages.      │
+│  • La idea central: Pantallas de app interactivas (tipo Spotify/Gmail). │
+│  • Herramientas clave: Git y GitHub, CSS Grid en 2D y Variables CSS.   │
+│  • Para celulares y computadoras: Scroll continuo en móviles y pantalla│
+│    fija moderna (100dvh) en computadoras.                              │
+│  • Publicación: Actualización automática en internet con GitHub Pages. │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
-> 📄 **Consultá la planificación completa clase por clase:**  
-> En el documento [**`PROGRAMA.md`**](PROGRAMA.md) se encuentra el desglose exhaustivo de las 32 interfaces a construir, con sus problemas visuales asociados, conceptos técnicos involucrados, arquetipos recomendados y scripts de IA.
+> 📄 **Consultá el temario completo clase por clase:**  
+> En el documento [**`PROGRAMA.md`**](PROGRAMA.md) podés ver el detalle de los 32 proyectos que vamos a construir a lo largo del año.
 
 ---
 
-## 6. Práctica Semanal Autónoma
+## 6. Práctica opcional para la semana
 
-Para mitigar la brecha de 6 días entre clase y clase sin caer en imposiciones escolares ni recordatorios invasivos que suelen ignorarse:
-* Cada clase incluye en su repositorio un **Reto Asincrónico Opcional** de 20 a 30 minutos.
-* Se enfoca en una micro-tarea concreta: agregar un componente complementario al proyecto terminado en clase o resolver un mini-ejercicio de detección de errores (*"Spot the Bug"*).
-* La realización es 100% autogestionada por el alumno adulto.
-
----
-
-## 7. Manejo Profesional del Viewport en Nivel 2
-
-Para erradicar la frustración habitual de las pantallas de aplicación en dispositivos móviles:
-1. **Uso de `100dvh` en lugar de `100vh`:** Adopción de la unidad moderna *Dynamic Viewport Height* para evitar que la barra de direcciones de Safari o Chrome en smartphones corte la interfaz.
-2. **Estrategia *Mobile-Scroll / Desktop-App*:** En celulares, la aplicación se comporta como un documento de scroll continuo vertical. La cabina cerrada (`height: 100dvh; overflow: hidden;`) con paneles independientes de scroll solo se activa en pantallas de escritorio mediante `@media (min-width: 1024px)`.
-3. **Escudo protector en Grid:** Regla universal de `min-width: 0;` en toda celda o columna de CSS Grid para neutralizar el desborde horizontal de textos largos o tablas.
+Sabemos que los adultos tienen trabajos, familias y poco tiempo libre. Por eso:
+* **No hay tareas escolares obligatorias ni fechas de entrega que te persigan.**
+* Cada proyecto incluye un **Reto Opcional** de 20 minutos al final de la guía para que, si tenés un rato libre durante la semana, puedas agregarle una tarjeta nueva a tu diseño o resolver un mini-ejercicio para fijar lo que vimos.
+* Cada uno administra su tiempo con libertad.
 
 ---
 
-## 8. Diseño Anti-Cliché: El Catálogo de Arquetipos
+## 7. Diseños con personalidad propia (Arquetipos Visuales)
 
-Para evitar que los proyectos se vean como plantillas genéricas de IA (radios desmedidos de 30px, gradientes saturados sin sentido y bajo contraste), se adopta el catálogo de **4 Arquetipos Visuales** de la [Skill Frontend Standards](.agents/skills/frontend-standards/SKILL.md):
+Para que tus proyectos no se vean como plantillas genéricas de internet con bordes gigantes inflados y colores lavados, en el curso trabajamos con 4 estilos visuales profesionales que podés elegir:
 
-1. **SaaS Moderno (Clean Tech):** Paleta Slate con acento Índigo, radios de 6 a 8px, doble sombra compuesta y micro-interacciones de software.
-2. **Editorial Cálido (Humanista):** Paleta Stone con acento Terracota, tipografía Serif elegante (*Playfair Display*), radios rectilíneos y cero sombras.
-3. **Neo-Brutalismo Suave (Pop/Dinámico):** Trazos negros sólidos de 2px, sombras angulares duras con offset puro (`4px 4px 0 #000`) y fondos pasteles contrastados.
-4. **Industrial / Fintech (Alta Densidad):** Modo oscuro grafito (`#09090b`), cifras numéricas monoespaciadas (*JetBrains Mono*), acentos verde terminal y precisión técnica.
+1. **SaaS Moderno (Tecnología Limpia):** Fondos claros y nítidos con acento azul o índigo, bordes redondeados sutiles y tarjetas bien definidas. Ideal para productos digitales y tablas de precios.
+2. **Editorial Cálido (Contenido y Lectura):** Fondos arena suaves, acentos terracota y tipografías con remates elegantes. Ideal para recetas, blogs, cultura y portfolios de autor.
+3. **Neo-Brutalismo Suave (Creativo y Dinámico):** Trazos negros sólidos, sombras duras sin difuminar y fondos con personalidad. Ideal para diseño independiente y eventos.
+4. **Industrial / Fintech (Control y Modo Oscuro):** Fondos oscuros de grafito, números claros con tipografía técnica y acentos verdes. Ideal para paneles de métricas y consolas.
 
 ---
 
-## 9. Filosofía del Standup de Cierre
+## 8. El cierre de cada clase: aprender de los errores de todos
 
-Los últimos 20 minutos de cada clase consolidan el **modelo mental** de los alumnos mediante dos preguntas disparadoras:
+Los últimos 20 minutos de clase no son para que el docente hable, sino para hacer una ronda rápida en grupo:
+* **¿Qué componente lograste terminar hoy?**
+* **¿Qué propiedad o desborde te dio dolor de cabeza y cómo lo solucionaste?**
 
-1. **La Pregunta Diagnóstica:** Evalúa la comprensión del *por qué* (ej: *"¿Por qué `margin-top: auto` solo empuja el botón al fondo si la tarjeta es un Flexbox de columna?"*).
-2. **La Pregunta de Debugging:** Comparte el aprendizaje del error con el grupo (ej: *"¿A quién se le desbordó la grilla al agrandar la tarjeta central y qué propiedad lo resolvió?"*).
+Compartir el problema en voz alta le ahorra tiempo a tus compañeros y consolida tu propio aprendizaje, acostumbrándote a la forma real en la que trabajan los equipos de tecnología.
