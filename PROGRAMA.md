@@ -1,109 +1,111 @@
-# Programa y Malla Curricular: 32 Clases por Proyectos
+# Plan de Clases: 32 Proyectos para Aprender Diseño Web
 
 > **Trayecto Anual de Diseño Web por Proyectos (Nivel 1 y Nivel 2)**  
-> 32 semanas · 1 clase semanal de 3 horas reloj (180 min) · Cero teoría abstracta · Fricciones visuales reales
+> 32 semanas · 1 clase semanal de 3 horas (180 min) · Cero teoría de memoria · Proyectos reales desde el primer día
 
 ---
 
-## Índice General
+## Índice
 
-1. [Estructura y Reglas de la Malla](#1-estructura-y-reglas-de-la-malla)
-2. [Nivel 1: Páginas Web e Interfaces de Flujo Continuo (Clases 01 a 16)](#2-nivel-1-páginas-web-e-interfaces-de-flujo-continuo-clases-01-a-16)
-3. [Nivel 2: Interfaces de Aplicación, Dashboards y Sistemas de Diseño (Clases 17 a 32)](#3-nivel-2-interfaces-de-aplicación-dashboards-y-sistemas-de-diseño-clases-17-a-32)
-4. [Matriz de Hitos y Entregables](#4-matriz-de-hitos-y-entregables)
-
----
-
-## 1. Estructura y Reglas de la Malla
-
-Cada clase está articulada sobre una **interfaz real** y una **fricción técnica** que motiva el aprendizaje. Los estudiantes nunca aprenden etiquetas o propiedades aisladas; siempre responden a una necesidad de diseño concreta.
-
-* **Micro-Diseño Previo (5 min):** Al inicio de cada sesión se dibuja la estructura de cajas rectangulares anidadas en herramientas ágiles sin login ([Excalidraw](https://excalidraw.com) o [tldraw](https://tldraw.com)), evitando la trampa del dibujo artístico.
-* **Andamiaje a Elección (*Choose Your Scaffold*):** En cada clase, el alumno elige entre el **Modo Guiado** (Starter Kit con HTML resuelto y zonas protegidas) o el **Modo Autónomo** (texto crudo + referencia visual para maquetar desde cero).
-* **JavaScript Quirúrgico (Patrón de 3 Pasos):** La interactividad se aborda con el interruptor del DOM (`querySelector` $\rightarrow$ `addEventListener` $\rightarrow$ `classList.toggle`). La IA asiste solo en funciones complementarias.
-* **Arquetipos Visuales:** Cada clase sugiere un arquetipo visual ([Skill Frontend Standards](.agents/skills/frontend-standards/SKILL.md)) para garantizar interfaces profesionales y anti-cliché.
-* **Práctica Semanal Autónoma:** Cada proyecto incluye un reto asincrónico opcional de 20-30 min para ejercitar en casa de forma autogestionada.
-* **Metodología pedagógica completa:** Consultar [METODOLOGIA.md](METODOLOGIA.md).
+1. [Cómo vamos a trabajar en cada clase](#1-cómo-vamos-a-trabajar-en-cada-clase)
+2. [Nivel 1: Páginas Web y Sitios de Lectura (Clases 01 a 16)](#2-nivel-1-páginas-web-y-sitios-de-lectura-clases-01-a-16)
+3. [Nivel 2: Pantallas de Aplicaciones, Paneles y Sistemas de Diseño (Clases 17 a 32)](#3-nivel-2-pantallas-de-aplicaciones-paneles-y-sistemas-de-diseño-clases-17-a-32)
+4. [Hitos y Proyectos Clave del Año](#4-hitos-y-proyectos-clave-del-año)
 
 ---
 
-## 2. Nivel 1: Páginas Web e Interfaces de Flujo Continuo (Clases 01 a 16)
+## 1. Cómo vamos a trabajar en cada clase
 
-> **Modelo mental:** Documento y flujo de lectura vertical con scroll natural.  
-> **Infraestructura:** Visual Studio Code + Live Server + Despliegue en producción con **Netlify Drop**.
+En este curso no vas a escuchar presentaciones teóricas aburridas ni vas a memorizar etiquetas de memoria. Cada clase arranca con una pantalla real terminada que desarmamos juntos para entender cómo está hecha, y luego la construís con tus propias manos.
 
-| # | Proyecto / Interfaz | Fricción Visual y Problema Real | Núcleo Técnico HTML5 / CSS3 | Arquetipo Sugerido | Interactividad / JS |
+* **Boceto rápido en cajas (5 minutos):** Antes de tocar el teclado, dibujamos la estructura en rectángulos simples con herramientas online gratuitas como [Excalidraw](https://excalidraw.com) o en papel. Si podés dibujarlo como cajas organizadas, lo podés maquetar en código.
+* **Elegí tu nivel de ayuda:** En cada clase vos decidís cómo querés arrancar:
+  * **Modo Guiado:** Una carpeta base que ya trae la estructura armada y comentarios claros que te indican dónde escribir tu código. Ideal para avanzar con paso firme y sin trabarte.
+  * **Modo Autónomo:** Para quienes quieran desafiarse: solo te damos el texto crudo y la imagen de referencia para que crees tus archivos desde cero.
+* **JavaScript simple para dar vida a la página:** Cuando una interfaz necesita movimiento (abrir un menú en el celular, mostrar u ocultar una contraseña o prender el modo oscuro), usamos un patrón simple y transparente de solo 3 pasos para conectar el clic del usuario con los estilos de CSS.
+* **Estilos profesionales:** Usamos combinaciones cuidadas de tipografía, colores y espaciados para que tus páginas se vean como productos reales de internet y no como ejercicios escolares.
+* **Práctica opcional para la semana:** Cada clase incluye un pequeño reto de 20 minutos para que quien tenga ganas de seguir practicando en su casa pueda sumar un componente extra a su ritmo.
+
+---
+
+## 2. Nivel 1: Páginas Web y Sitios de Lectura (Clases 01 a 16)
+
+> **La idea central de este nivel:** Páginas web que se leen hacia abajo con scroll natural, cuidando la tipografía, el orden del contenido y la adaptación a celulares.  
+> **Herramientas:** Visual Studio Code, Live Server y publicación directa en internet con **Netlify Drop**.
+
+| # | Proyecto que construimos | El problema que resolvemos | Lo que aprendemos de HTML y CSS | Estilo visual sugerido | Interactividad |
 |---|---|---|---|---|:---:|
-| **01** | **Tarjeta de Perfil Personal (Link in Bio)** | La web por defecto es texto negro plano sobre fondo blanco con márgenes toscos. | Estructura básica (`<!DOCTYPE>`, `<html>`, `<head>`, `<body>`), enlaces `<a>`, imágenes `<img>` con `alt`. Estilos en línea vs archivo `style.css` inicial. | Neo-Brutalismo Suave | No |
-| **02** | **Ficha de Receta Culinaria** | El texto corrido sin jerarquías ni estructura semántica cansa la vista y es inaccesible. | Semántica: `<header>`, `<main>`, `<article>`, `<section>`, listas `<ul>`/`<ol>`. Tipografía base: `font-family`, `font-size`, `line-height`, `color`. | Editorial Cálido | No |
-| **03** | **Tarjeta de Producto E-Commerce** | Los textos e imágenes se pegan a los bordes de la caja y se desbordan sin control. | **Box Model I:** `width`, `height`, `padding`, `border`, `margin`. Colapso de márgenes verticales y desbordes con `overflow`. | SaaS Moderno | No |
-| **04** | **Banner Promocional / Call to Action** | Al agregar `padding`, la tarjeta se ensancha más de lo definido y rompe el contenedor. | **Box Model II:** `box-sizing: border-box`, reseteo universal `*`, fondos (`background-color`, `background-image`, `background-size: cover`). | Neo-Brutalismo Suave | No |
-| **05** | **Artículo Editorial con Citas Destacadas** | Los párrafos tienen líneas kilométricas ilegibles en monitores anchos y fuentes del sistema anticuadas. | Tipografía web con Google Fonts (`<link>`), escala en `rem`, `letter-spacing`, centrado horizontal con `max-width` en `rem` y `margin: 0 auto`. | Editorial Cálido | No |
-| **06** | **Barra de Navegación Simple (Topbar)** | Los enlaces (`<a>`) se ponen en línea pero no se pueden alinear ni separar limpiamente con `float` o `inline-block`. | **Flexbox I:** `display: flex`, dirección de flujo (`flex-direction: row`), distribución con `justify-content` (`space-between`, `center`). | SaaS Moderno | No |
-| **07** | **Barra de Herramientas y Acciones** | Los iconos y los textos dentro del mismo botón quedan desalineados verticalmente. | **Flexbox II:** Alineación transversal con `align-items: center`, propiedad `gap` para espaciado limpio entre ítems, estados `:hover` y `:active`. | Industrial / Fintech | No |
-| **08** | **Grilla de Precios (Pricing Table)** | Tres tarjetas que se apilan solas; al ponerlas en fila tienen alturas desparejas y los botones flotan a distinta altura. | **Flexbox III:** `flex: 1` para anchos equitativos, `align-items: stretch` para igualar alturas, flex vertical interno en cada tarjeta y `margin-top: auto` en el botón. | SaaS Moderno | JS: Toggle de clase activa + IA para recálculo |
-| **09** | **Showcase / Galería de Trabajos** | Al achicar la pantalla, las tarjetas en fila se aplastan infinitamente o se salen de la pantalla horizontalmente. | **Flexbox IV:** `flex-wrap: wrap`, anchos responsivos básicos con porcentajes (`%`) y `min-width`, cálculo de columnas flexibles. | Neo-Brutalismo Suave | No |
-| **10** | **Catálogo de Productos con Filtros** | Necesidad de combinar una columna fija de filtros a la izquierda y una grilla fluida a la derecha. | Flexbox anidado: contenedor maestro fila (`sidebar` + `main`) con grilla interna multilínea. | SaaS Moderno | No |
-| **11** | **Formulario de Registro / Newsletter** | Los campos de entrada quedan desalineados, no se sabe dónde escribir y no tienen foco visual. | `<form>`, `<input>` (`text`, `email`, `password`), vinculación estricta de `<label for="...">` con `<input id="...">`, estados `:focus-visible`. | SaaS Moderno | JS: Patrón de 3 pasos para alternar visibilidad de contraseña |
-| **12** | **Formulario de Cotización Complejo** | Casillas de verificación, opciones únicas y áreas de texto desordenadas sin agrupación lógica. | `<select>`, `<textarea>`, `<fieldset>`, `<legend>`, `<input type="checkbox">` y `type="radio"`. Maquetación accesible de formularios con Flexbox. | Editorial Cálido | No |
-| **13** | **Tabla de Posiciones / Comparativa** | Los datos tabulares armados con `divs` no se alinean verticalmente ni comunican semántica de datos. | `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, `<td>`. Fricciones: `border-collapse: collapse`, padding de celdas, alineación numérica a la derecha. | Industrial / Fintech | No |
-| **14** | **Landing Page de Presentación (Parte 1: Maquetación)** | Integrar todas las piezas aprendidas (Navbar, Hero, Features, Pricing, Footer) en un documento semántico cohesivo. | Ensamblado semántico integral de Nivel 1. Jerarquía de encabezados (`h1` a `h3`), anclajes de scroll (`id` y `href="#..."`), acordeón nativo con `<details>` y `<summary>`. | A elección del alumno | No |
-| **15** | **Landing Page de Presentación (Parte 2: Pulido e Interactividad)** | La barra de navegación se desborda en pantallas angostas y se necesita un menú desplegable interactivo. | Meta viewport (`<meta name="viewport">`), media queries introductorias, favicon y metadatos básicos. | A elección del alumno | JS: Patrón de 3 pasos para menú hamburguesa (`is-open`) |
-| **16** | **Despliegue y Auditoría de Nivel 1** | El proyecto solo existe en la máquina local del alumno y tiene posibles errores de sintaxis o bajo contraste. | Auditoría de código: W3C Validator, auditoría de Accesibilidad/Performance con Chrome DevTools (Lighthouse). Despliegue en producción con **Netlify Drop**. Demo day de cierre de Nivel 1. | Libre | No |
+| **01** | **Tarjeta de Perfil Personal (Link in Bio)** | La web por defecto muestra texto plano negro y enlaces azules desordenados. | Estructura básica de un archivo web (`html`, `head`, `body`), textos, enlaces e imágenes con descripción. Tu primer archivo de estilos `style.css`. | Neo-Brutalismo Suave | No |
+| **02** | **Ficha de Receta Culinaria** | El texto corrido sin jerarquías cansa la vista y nadie lo lee. | Etiquetas con significado (`header`, `main`, `article`, listas con viñetas y numeradas). Fuentes, tamaños, interlineado y colores para que dé gusto leer. | Editorial Cálido | No |
+| **03** | **Tarjeta de Producto E-Commerce** | Las fotos y los textos se pegan a los bordes de la tarjeta o se salen de la caja. | **El Modelo de Caja:** Ancho, alto, relleno interior (`padding`), bordes y separación exterior (`margin`). Cómo evitar desbordes. | SaaS Moderno | No |
+| **04** | **Banner Promocional con Fondo** | Cuando agregás espacio adentro de una caja, se ensancha de más y rompe el diseño. | La regla de oro `box-sizing: border-box` para que las medidas sean exactas. Fondos con color e imágenes completas (`background-size: cover`). | Neo-Brutalismo Suave | No |
+| **05** | **Artículo de Blog con Citas Destacadas** | Líneas de texto eternas de punta a punta de la pantalla que cansan los ojos. | Tipografías modernas de Google Fonts, tamaño de texto en `rem` y límite de ancho centrado en la pantalla para una lectura cómoda. | Editorial Cálido | No |
+| **06** | **Barra de Navegación (Menú Superior)** | Queremos poner el logo a la izquierda y los botones a la derecha sin que se desacomoden. | **Flexbox básico:** Poner elementos en fila horizontal (`display: flex`) y distribuirlos a los extremos con `justify-content: space-between`. | SaaS Moderno | No |
+| **07** | **Botonera y Barra de Acciones** | Los iconos y los textos dentro del mismo botón quedan chuecos y desalineados verticalmente. | Centrado vertical perfecto con `align-items: center` y separación limpia entre botones con `gap`. Efectos al pasar el mouse (`:hover`). | Industrial / Fintech | No |
+| **08** | **Tabla de Precios y Planes** | Tres tarjetas en fila donde una tiene más texto que otra, quedan de distintas alturas y los botones flotan a cualquier nivel. | Repartir el ancho en partes iguales (`flex: 1`), igualar alturas automáticamente y clavar los botones abajo de todo con `margin-top: auto`. | SaaS Moderno | Botón para alternar precios mensuales y anuales |
+| **09** | **Galería de Trabajos (Portfolio)** | Al achicar la pantalla, las tarjetas se aprietan infinitamente hasta deformarse. | Hacer que las tarjetas bajen a la siguiente fila de forma natural con `flex-wrap: wrap` y anchos en porcentaje. | Neo-Brutalismo Suave | No |
+| **10** | **Catálogo de Productos con Filtros** | Organizar una columna fija de filtros a la izquierda y una grilla de productos a la derecha. | Combinar cajas Flexbox dentro de otras cajas (menú lateral + grilla de productos). | SaaS Moderno | No |
+| **11** | **Formulario de Registro y Contacto** | Los casilleros para escribir quedan desalineados y el usuario no sabe dónde hacer clic. | Formularios prolijos: casilleros de texto, email y contraseñas, etiquetas asociadas para hacer clic en el texto, y resaltado del campo activo (`:focus`). | SaaS Moderno | Botón para mostrar u ocultar la contraseña escrita |
+| **12** | **Formulario de Cotización o Reservas** | Opciones de selección múltiple, desplegables y áreas de mensaje desordenadas. | Menús desplegables (`select`), casillas de verificación (`checkbox`), botones de opción única (`radio`) y cajas de comentarios (`textarea`). | Editorial Cálido | No |
+| **13** | **Tabla de Posiciones o Comparativa** | Datos numéricos y listas de datos desalineadas y difíciles de comparar. | Tablas semánticas (`table`, `tr`, `th`, `td`), unión de bordes (`border-collapse`) y alineación de números a la derecha para comparar fácil. | Industrial / Fintech | No |
+| **14** | **Página Completa de Producto (Parte 1)** | Unir todo lo aprendido en una sola página larga y profesional (Menú, Portada, Características, Precios y Pie de página). | Armado de la estructura completa del sitio, enlaces que scrollean suavemente a cada sección y preguntas frecuentes con acordeón nativo (`details`). | A tu elección | No |
+| **15** | **Página Completa de Producto (Parte 2)** | En la pantalla chica del celular el menú tapa toda la página y necesita abrirse con un botón. | Adaptar la página a celulares (Media Queries). Conectar el botón de tres rayitas (hamburguesa) para abrir y cerrar el menú móvil. | A tu elección | Abrir y cerrar el menú en celulares |
+| **16** | **Tu Primera Web en Internet y Auditoría** | La página solo funciona en tu computadora y querés compartirla con amigos o clientes. | Revisar que no haya errores de código, verificar que cargue rápido y subir la carpeta a internet gratis con **Netlify Drop** para tener tu enlace público. | Libre | No |
 
 ---
 
-## 3. Nivel 2: Interfaces de Aplicación, Dashboards y Sistemas de Diseño (Clases 17 a 32)
+## 3. Nivel 2: Pantallas de Aplicaciones, Paneles y Sistemas de Diseño (Clases 17 a 32)
 
-> **Modelo mental:** Cabina de control / Pantalla de aplicación (*Viewport App*).  
-> **Regla de Viewport:** *Mobile-Scroll* continuo en teléfonos (`< 1024px`) y *Desktop-App* fija (`100dvh`) en pantallas de escritorio.  
-> **Infraestructura:** Terminal de VS Code + Control de versiones con **Git local** + Repositorios remotos y despliegue automatizado con **GitHub Pages**.
+> **La idea central de este nivel:** Ya no armamos páginas de lectura, sino **pantallas de aplicaciones interactivas** (estilo Spotify, Gmail o paneles de control), con control de versiones profesional en Git y adaptación perfecta a celulares y computadoras.  
+> **Herramientas:** Terminal de VS Code, **Git y GitHub**, y publicación automática en **GitHub Pages**.
 
-| # | Proyecto / Interfaz | Fricción Visual y Problema Real | Núcleo Técnico HTML5 / CSS3 / Herramientas | Arquetipo Sugerido | Interactividad / JS |
+| # | Proyecto que construimos | El problema que resolvemos | Lo que aprendemos de HTML y CSS | Estilo visual sugerido | Interactividad |
 |---|---|---|---|---|:---:|
-| **17** | **Setup Profesional: Tarjeta de Métricas Versionada** | Modificar código sin historial provoca pérdida irreparable de trabajo ante errores o roturas. | Inicialización de Git local (`git init`, `add`, `commit`), creación de repositorio remoto en GitHub, sincronización con `git push`. Estructura modular de carpetas. | Industrial / Fintech | No |
-| **18** | **Tarjeta con Badge Notificador y Menú de Acciones** | Se necesita clavar una pastilla ("Nuevo", "3") en la esquina superior exacta de una tarjeta sin que empuje el contenido. | **Posicionamiento I:** Flujo normal vs posicionamiento fuera de flujo. `position: relative` (padre como ancla) y `position: absolute` (hijo posicionado con `top`/`right`). | SaaS Moderno | No |
-| **19** | **Header Sticky con Dropdown de Notificaciones** | El encabezado desaparece al scrollear y un menú flotante queda tapado por los elementos de abajo. | **Posicionamiento II:** `position: sticky` vs `fixed`. Contexto de apilamiento y manejo de capas de profundidad con `z-index`. | Industrial / Fintech | JS: Patrón de 3 pasos para abrir/cerrar dropdown |
-| **20** | **Galería Fotográfica / Portfolio Asimétrico** | Flexbox obliga a pensar fila por fila; no permite controlar simultáneamente filas y columnas para armar huecos y mosaicos. | **CSS Grid I:** Introducción al motor bidimensional. `display: grid`, `grid-template-columns`, `grid-template-rows`, unidad de fracción `fr` y propiedad `gap`. | Neo-Brutalismo Suave | No |
-| **21** | **Bento Grid de Funcionalidades (Estilo Apple / Linear)** | Diseñar tarjetas donde una ocupa 2 columnas y 2 filas mientras otras son cuadradas pequeñas sin romper la grilla. | **CSS Grid II:** Expansión de celdas con `grid-column: span ...` y `grid-row: span ...`. Posicionamiento explícito por líneas de grilla (`1 / 3`). | SaaS Moderno | No |
-| **22** | **Layout Shell de Aplicación (Sidebar + Topbar + Main)** | Queremos una pantalla de app fija donde solo scrollee el panel central, sin que la barra de direcciones móvil rompa la vista. | **CSS Grid III:** `grid-template-areas`. Unidad moderna `100dvh`. Regla de oro: scroll natural en móvil y cabina fija solo en `@media (min-width: 1024px)`. Salvaguarda: `min-width: 0;` en columnas Grid. | Industrial / Fintech | No |
-| **23** | **Dashboard de Métricas (Macro Grid + Micro Flexbox)** | Dificultad para coordinar la estructura general de la pantalla con la alineación fina dentro de cada tarjeta. | **La Regla de Oro Integrada:** CSS Grid para el esqueleto macro de la aplicación y Flexbox para los componentes micro internos (iconos, cifras, badges de tendencia). | Industrial / Fintech | No |
-| **24** | **Grilla Adaptable sin Media Queries** | Escribir decenas de media queries para cada ancho de pantalla genera código frágil y engorroso. | **CSS Grid IV:** Funciones avanzadas de fluidez automática: `repeat()`, `minmax()`, `auto-fit` y `auto-fill`. Grilla responsiva fluida sin una sola media query. | SaaS Moderno | No |
-| **25** | **Dashboard Mobile-First y Menú Lateral de App** | El layout de escritorio colapsa en celulares: la sidebar ocupa toda la pantalla y no deja ver el contenido. | Estrategia **Mobile-First**: estilos base para teléfonos y media queries con `@media (min-width: 1024px)`. | SaaS Moderno | JS: Patrón de 3 pasos para colapsar/deslizar sidebar móvil |
-| **26** | **Sistema de Tokens de Diseño (Design System)** | Cambiar un color de marca o un radio implica buscar y reemplazar valores manuales en cientos de líneas de CSS. | **Variables CSS (Custom Properties):** Declaración en `:root`, cascada y alcance léxico, tokens de color, espaciado, radios de borde y elevaciones. | Libre | No |
-| **27** | **Dashboard con Modo Oscuro (Theming Dinámico)** | Los usuarios demandan modo oscuro, pero duplicar la hoja de estilos crea un infierno de mantenimiento. | Theming moderno redefiniendo variables CSS bajo `[data-theme="dark"]` y detección automática con `@media (prefers-color-scheme: dark)`. | Industrial / Fintech | JS: Patrón de 3 pasos (toggle dark theme) + IA para persistencia en `localStorage` |
-| **28** | **Iconografía Vectorial (Tabler Icons) y Multimedia Nativa** | Las imágenes PNG de iconos se pixelan al agrandarse y no responden al color del texto; reproductores externos son pesados. | Inclusión de SVGs vectoriales externos (**Tabler Icons**), colorización con `currentColor`, trazos dinámicos. Multimedia nativa optimizada con `<video>` y `<audio>`. | Editorial Cálido | No |
-| **29** | **Formulario de Cuenta con Validación Visual** | El usuario completa mal un campo y no recibe ninguna indicación visual hasta que envía la página. | Formularios enriquecidos: `<datalist>`, inputs `range`, `color`, `date`. Pseudo-clases de validación visual en tiempo real: `:valid`, `:invalid`, `:required`, `:user-valid`. | SaaS Moderno | No |
-| **30** | **Factura Comercial y Reporte para Impresión** | Al imprimir un reporte o factura (`Ctrl + P`), la barra de navegación gasta tinta, los fondos se pierden y las tablas se cortan a la mitad. | Hojas de estilo para impresión: `@media print`, `@page { margin: ... }`, ocultar controles (`display: none`), impresión forzada de fondos (`print-color-adjust: exact`) y saltos limpios con `break-inside: avoid`. | Editorial Cálido | No |
-| **31** | **Proyecto Integrador: SaaS Dashboard (Ensamblado)** | Construcción del proyecto final: Aplicación completa integrando Shell 100dvh, Bento Grid, tabla de datos, modal y Dark Mode. | Integración total de Nivel 2. Arquitectura CSS modular, accesibilidad por teclado (`:focus-visible`), semántica de app y componentes encapsulados. | A elección del alumno | JS: Patrón de 3 pasos para modal accesible + IA complementaria |
-| **32** | **Despliegue Continuo con GitHub Pages y Demo Day** | Configurar el pipeline para que cada cambio subido a Git se publique automáticamente en internet. | Configuración de publicación desde rama en **GitHub Pages**, verificación de rutas relativas de assets, auditoría final Lighthouse (Performance/SEO/Accesibilidad) y presentación pública. | Libre | No |
+| **17** | **Guardá tu código como un profesional (Git)** | Modificar código sin copia de seguridad hace que un error borre horas de trabajo. | Tu primer repositorio con Git en la terminal de VS Code: guardar cambios (`commit`), crear tu cuenta en GitHub y subir tu proyecto a la nube (`push`). | Industrial / Fintech | No |
+| **18** | **Tarjeta con Notificación Flotante (Badge)** | Queremos colocar un circulito de "Nuevo" o "3 mensajes" en la esquina de una tarjeta sin que corra los textos. | **Posicionamiento:** Sacar elementos del flujo normal con `position: absolute` y fijar la referencia en la tarjeta con `position: relative`. | SaaS Moderno | No |
+| **19** | **Menú Superior Fijo con Notificaciones** | El menú desaparece al scrollear hacia abajo y una ventanita flotante queda tapada por otros elementos. | Dejar el menú pegado arriba al hacer scroll (`position: sticky`), y controlar qué elemento queda arriba de cuál con capas (`z-index`). | Industrial / Fintech | Abrir y cerrar la ventanita de notificaciones |
+| **20** | **Mosaico de Fotos y Portfolio Creativo** | Flexbox solo piensa en filas o columnas separadas; no permite armar mosaicos con huecos y fotos de distintos tamaños. | **CSS Grid:** El motor para diseñar en dos dimensiones al mismo tiempo (filas y columnas juntas), usando fracciones (`fr`) y separaciones (`gap`). | Neo-Brutalismo Suave | No |
+| **21** | **Grilla Estilo Bento (Apple / Linear)** | Tarjetas modernas donde una es grande y ocupa dos columnas y dos filas, mientras otras son pequeñas, sin romper la cuadrícula. | Expandir tarjetas en la grilla (`grid-column: span 2` y `grid-row: span 2`) para armar composiciones asimétricas y dinámicas. | SaaS Moderno | No |
+| **22** | **Estructura Base de una App (App Shell)** | Queremos una pantalla fija de aplicación (estilo panel de control) donde el menú lateral quede quieto y solo scrollee el contenido central. | Dividir la pantalla en áreas nombradas (`grid-template-areas`), usar la altura real de la pantalla (`100dvh`) y scroll independiente en el panel de trabajo. | Industrial / Fintech | No |
+| **23** | **Panel de Métricas (Dashboard de Control)** | Cómo coordinar el esqueleto general de la aplicación con los detalles chicos dentro de cada tarjeta de estadística. | **La combinación profesional:** CSS Grid para el esqueleto de la pantalla y Flexbox para los detalles internos de cada tarjeta (iconos, números y porcentajes). | Industrial / Fintech | No |
+| **24** | **Grillas que se acomodan solas a cualquier pantalla** | Tener que escribir reglas manuales para cada tamaño de celular, tablet o monitor es agotador y frágil. | Columnas automáticas e inteligentes con `repeat()`, `minmax()` y `auto-fit`: la grilla se acomoda sola sin escribir una sola media query. | SaaS Moderno | No |
+| **25** | **Menú Lateral Deslizable para Celulares** | En la pantalla chica del celular, la barra lateral ocupa demasiado espacio y tapa el contenido del usuario. | Pensar primero en el celular (*Mobile-First*): la barra lateral arranca oculta y se desliza suavemente sobre la pantalla al tocar un botón. | SaaS Moderno | Abrir y cerrar el menú lateral en celulares |
+| **26** | **Sistema de Colores y Estilos (Design Tokens)** | Cambiar el color de tu marca o redondear los bordes te obliga a buscar y reemplazar en cientos de líneas de código. | **Variables de CSS (`:root`):** Definir tu paleta de colores, fuentes y radios de borde en un solo lugar central para cambiar el diseño entero en 2 segundos. | Libre | No |
+| **27** | **Modo Oscuro (Dark Mode)** | Tus usuarios quieren usar la app de noche sin quemarse los ojos, pero duplicar el código CSS es inviable. | Alternar entre tema claro y oscuro cambiando solo las variables de color. Conectar un botón que recuerde la elección del usuario en su navegador. | Industrial / Fintech | Botón de modo claro / modo oscuro con memoria |
+| **28** | **Iconos Nítidos (SVG) y Video Nativo** | Las imágenes PNG de iconos se ven borrosas al agrandarlas y no cambian de color con el texto. | Incorporar iconos vectoriales modernos (**Tabler Icons**) que adoptan el color del texto automáticamente. Agregar reproductores de video y audio nativos. | Editorial Cálido | No |
+| **29** | **Formulario con Avisos Visuales en Vivo** | El usuario escribe mal un correo o deja un campo vacío y no se entera hasta que la página falla. | Casilleros modernos (calendario, selector de color, control deslizante) y bordes que se ponen en verde o rojo automáticamente mientras escribís (`:valid` y `:invalid`). | SaaS Moderno | No |
+| **30** | **Factura Comercial Lista para Imprimir o Guardar en PDF** | Al querer imprimir un comprobante o factura (`Ctrl + P`), sale el menú de la web, se cortan las tablas y se gasta tinta al cohete. | Estilos especiales de impresión (`@media print`): ocultar menús, forzar colores de fondo limpios y evitar que las tablas se corten entre dos hojas. | Editorial Cálido | No |
+| **31** | **Proyecto Final: Tu Propia Aplicación Web Completa** | Ensamblar todas las habilidades del año en una aplicación web terminada: panel de métricas, menú lateral, modo oscuro y ventana modal. | Arquitectura limpia de archivos, accesibilidad para navegar con el teclado y componentes interactivos integrados con solidez. | A tu elección | Ventana emergente (modal) para crear registros |
+| **32** | **Publicación Automática en GitHub Pages y Cierre** | Tu aplicación tiene que estar online y actualizarse automáticamente cada vez que hacés un cambio en tu código. | Configuración de publicación automática en **GitHub Pages**, revisión final de rendimiento y accesibilidad con Lighthouse, y presentación de proyectos. | Libre | No |
 
 ---
 
-## 4. Matriz de Hitos y Entregables
+## 4. Hitos y Proyectos Clave del Año
+
+A lo largo de las 32 semanas vas a ir alcanzando 8 hitos concretos con proyectos terminados para sumar a tu portfolio personal:
 
 ```mermaid
 flowchart TD
-    subgraph N1["NIVEL 1: Flujo Continuo (Semanas 01 a 16)"]
+    subgraph N1["NIVEL 1: Sitios Web y Lectura (Clases 01 a 16)"]
         direction LR
-        H1["Semana 04<br/><b>Hito 1: Box Model</b><br/>Banner CTA & border-box"] --> H2["Semana 08<br/><b>Hito 2: Flexbox</b><br/>Pricing Table"] --> H3["Semana 13<br/><b>Hito 3: Formularios & Tablas</b><br/>Captura estructurada"] --> H4["Semana 16<br/><b>Hito 4: Producción Nivel 1</b><br/>Landing Page en Netlify"]
+        H1["Semana 04<br/><b>Hito 1: Cajas y Medidas</b><br/>Banner Promocional"] --> H2["Semana 08<br/><b>Hito 2: Dominio de Flexbox</b><br/>Tabla de Precios y Planes"] --> H3["Semana 13<br/><b>Hito 3: Formularios y Datos</b><br/>Captura de datos prolija"] --> H4["Semana 16<br/><b>Hito 4: Tu Web en Internet</b><br/>Landing Page en Netlify"]
     end
 
-    subgraph N2["NIVEL 2: Pantalla de App (Semanas 17 a 32)"]
+    subgraph N2["NIVEL 2: Aplicaciones y Paneles (Clases 17 a 32)"]
         direction LR
-        H5["Semana 17<br/><b>Hito 5: Control de Versiones</b><br/>Git local & GitHub"] --> H6["Semana 22<br/><b>Hito 6: Shell 100dvh</b><br/>Grid Areas & Scroll"] --> H7["Semana 27<br/><b>Hito 7: Design Tokens</b><br/>Dark Mode persistente"] --> H8["Semana 32<br/><b>Hito 8: Demo Day</b><br/>SaaS Dashboard en GitHub Pages"]
+        H5["Semana 17<br/><b>Hito 5: Trabajo con Git</b><br/>Primer código en GitHub"] --> H6["Semana 22<br/><b>Hito 6: Pantalla de App</b><br/>Panel con menú y scroll"] --> H7["Semana 27<br/><b>Hito 7: Modo Oscuro</b><br/>Diseño con Variables CSS"] --> H8["Semana 32<br/><b>Hito 8: Presentación Final</b><br/>App Web en GitHub Pages"]
     end
 
     H4 --> H5
 ```
 
-| Semana | Nivel | Hito Pedagógico | Interfaz Entregable | Criterio de Aprobación |
+| Semana | Nivel | Hito que alcanzás | Qué te llevás funcionando | Cómo sabemos que está bien |
 | :---: | :---: | :--- | :--- | :--- |
-| **04** | 1 | **Hito 1: Dominio del Box Model** | Banner Promocional CTA | Cero desbordes, reseteo universal con `border-box` aplicado correctamente. |
-| **08** | 1 | **Hito 2: Motor Unidimensional** | Grilla de Precios (3 Planes) | Alturas de tarjetas emparejadas con `stretch` y botones anclados al fondo con `margin-top: auto`. |
-| **13** | 1 | **Hito 3: Estructuración y Datos** | Formulario accesible y Tabla | Vinculación estricta `<label for>` con `<input id>` y colapso de bordes de tabla. |
-| **16** | 1 | **Hito 4: Cierre de Nivel 1** | Landing Page Completa | URL pública activa en **Netlify Drop**, cero errores en W3C Validator y Lighthouse > 90 en Accesibilidad. |
-| **17** | 2 | **Hito 5: Flujo de Trabajo Profesional** | Tarjeta de Métricas | Historial de commits en terminal y repositorio remoto visible en GitHub. |
-| **22** | 2 | **Hito 6: Shell de Aplicación Fija** | Shell con Sidebar, Topbar y Main | Contenedor cerrado en `100dvh` solo en desktop (`min-width: 1024px`) y `min-width: 0;` en columnas. |
-| **27** | 2 | **Hito 7: Sistema de Tokens y Theming** | Dashboard con Modo Oscuro | Alternancia de paleta completa sin duplicar CSS, cambiando variables bajo `[data-theme="dark"]`. |
-| **32** | 2 | **Hito 8: Proyecto Integrador Final** | SaaS Dashboard Completo | Despliegue continuo activo en **GitHub Pages**, responsive Mobile-First y presentación en Demo Day. |
+| **04** | 1 | **Hito 1: Control del espacio y cajas** | Banner promocional con fondo | Las medidas son exactas, no hay desbordes y entendés cómo funciona el relleno y los márgenes. |
+| **08** | 1 | **Hito 2: Alineación horizontal profesional** | Tabla de 3 planes de precios | Las tres tarjetas tienen exactamente la misma altura y los botones quedan alineados en la misma línea. |
+| **13** | 1 | **Hito 3: Formularios y tablas limpias** | Formulario accesible y tabla ordenada | Se puede hacer clic en los textos para activar los casilleros y los números de la tabla se comparan fácil. |
+| **16** | 1 | **Hito 4: Cierre del Nivel 1** | Página completa de producto | Tu sitio está publicado con un enlace real en **Netlify Drop** y se lee perfecto en celular y computadora. |
+| **17** | 2 | **Hito 5: Guardado profesional en la nube** | Tarjeta de métricas versionada | Sabés guardar cambios desde la terminal y tu código está a salvo en tu cuenta de GitHub. |
+| **22** | 2 | **Hito 6: Pantalla de aplicación fija** | Panel con barra lateral y contenido | El menú queda fijo, no hay saltos raros en celulares y solo scrollea el área de trabajo. |
+| **27** | 2 | **Hito 7: Sistema de estilos y Modo Oscuro** | Panel interactivo claro / oscuro | Cambiás toda la estética de la app tocando un solo archivo y el botón recuerda el tema elegido. |
+| **32** | 2 | **Hito 8: Proyecto Integrador Final** | Aplicación web completa online | Tu proyecto final está publicado en **GitHub Pages**, carga rápido, funciona en celulares y está listo para mostrar. |
