@@ -1,0 +1,70 @@
+/* Plantilla Guiada: Completá las propiedades indicadas */
+
+/* ============================================================ */
+/* Clase 02: Ficha de Receta Culinaria
+/* Arquetipo Visual: Editorial Cálido
+/* ============================================================ */
+
+:root {
+  --color-bg: #fafaf9;
+  --color-card-bg: #ffffff;
+  --color-text-main: #1c1917;
+  --color-text-muted: #78716c;
+  --color-border: #e7e5e4;
+  --color-accent: #c2410c;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --radius-md: 4px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  line-height: 1.5;
+  padding: 2rem 1rem;
+}
+
+.project-container {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.project-header {
+  margin-bottom: 2rem;
+}
+
+.project-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.project-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+.project-card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+}

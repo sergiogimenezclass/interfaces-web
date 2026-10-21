@@ -1,0 +1,5 @@
+Ficha de Receta Culinaria
+
+El texto corrido sin jerarquías cansa la vista y nadie lo lee.
+
+Semántica (header, main, article, listas), fuentes, tamaños e interlineado.
