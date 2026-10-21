@@ -101,6 +101,9 @@ El trayecto se estructura en dos semestres de 16 clases cada uno, diferenciados 
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
+> 📄 **Consultá la planificación completa clase por clase:**  
+> En el documento [**`PROGRAMA.md`**](PROGRAMA.md) se encuentra el desglose exhaustivo de las 32 interfaces a construir, con sus problemas visuales asociados, conceptos técnicos involucrados, arquetipos recomendados y scripts de IA.
+
 ---
 
 ## 6. Diseño Anti-Cliché: El Catálogo de Arquetipos
