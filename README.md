@@ -10,6 +10,7 @@
 * 📖 [**`METODOLOGIA.md`**](METODOLOGIA.md) — Cómo enseñamos, rutina de clase (180 min), protocolo de ayuda con DevTools (`F12`), andamiaje a elección y JavaScript en 3 pasos.
 * 📋 [**`PROGRAMA.md`**](PROGRAMA.md) — Plan detallado de las 32 clases: problema real que resuelve cada proyecto, herramientas de HTML/CSS y arquetipo visual sugerido.
 * 🛠️ [**Skill: `frontend-standards`**](.agents/skills/frontend-standards/SKILL.md) — Estándares técnicos del proyecto: catálogo de arquetipos, unidades permitidas, BEM simplificado y estructura obligatoria por clase.
+* 🚀 [**`GUIA-DOCENTE-RELEASES.md`**](GUIA-DOCENTE-RELEASES.md) — Instructivo paso a paso para publicar cada clase oficial desde la interfaz web de GitHub con 3 clics.
 
 ---
 

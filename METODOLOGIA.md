@@ -137,7 +137,16 @@ El año se organiza en dos semestres independientes y continuos:
 
 ---
 
-## 6. Práctica opcional para la semana
+## 6. Política de Entrega Semanal por Releases (GitHub)
+
+Para cuidar la progresión pedagógica y el valor del aula:
+* Todos los proyectos y commits se van desarrollando en el repositorio.
+* La clase oficial de la semana se fija y publica desde la interfaz web de GitHub mediante el sistema de **Releases** (*Latest Release*), permitiendo a los alumnos acceder a la versión oficial correspondiente a su semana de cursada sin perderse en código futuro.
+* Los pasos operativos para el docente se detallan en [**`GUIA-DOCENTE-RELEASES.md`**](GUIA-DOCENTE-RELEASES.md).
+
+---
+
+## 7. Práctica opcional para la semana
 
 Sabemos que los adultos tienen trabajos, familias y poco tiempo libre. Por eso:
 * **No hay tareas escolares obligatorias ni fechas de entrega que te persigan.**

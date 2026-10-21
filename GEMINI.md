@@ -24,3 +24,5 @@
   └── starter-kit-autonomo/
   ```
 * **Git:** Commits atómicos por funcionalidad con mensajes descriptivos bajo la convención *Conventional Commits* (`feat:`, `fix:`, `docs:`).
+* **Publicación a producción (Gestión docente):** Todos los commits de desarrollo se suben al repositorio. La versión oficial visible para los alumnos se fija clase a clase desde la interfaz web de GitHub utilizando el sistema de **Releases** (etiquetando el commit correspondiente a la clase activa como *Latest Release*).
+
