@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Proyectos | Trayecto Anual de Diseño Web 2027</title>
+  <meta name="description" content="Explorador de proyectos prácticos y código fuente del Trayecto Anual de Diseño Web por Proyectos 2027.">
+  
+  <!-- Tipografías (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Estilos del Portal (Arquetipo Editorial Cálido) -->
+  <link rel="stylesheet" href="css/portal.css">
+</head>
+<body>
+
+  <!-- Encabezado / Hero Editorial -->
+  <header class="portal-header">
+    <div class="portal-container">
+      <span class="portal-tag">Trayecto Anual 2027</span>
+      <h1 class="portal-title">Diseño y Desarrollo de Interfaces Web</h1>
+      <p class="portal-subtitle">
+        Portal interactivo para explorar los proyectos terminados, probar la respuesta en dispositivos y examinar el código HTML5 y CSS3 de cada clase.
+      </p>
+
+      <div class="portal-meta">
+        <div><strong>32</strong> Proyectos Prácticos</div>
+        <div><strong>2</strong> Semestres Formativos</div>
+        <div><strong>Stack:</strong> HTML5 · CSS3 Nativo · JS Vanilla</div>
+        <div><strong>Metodología:</strong> Anti-Teórica · Use-Modify-Create</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="portal-container">
+    <!-- Barra de Filtros por Nivel -->
+    <div class="portal-controls">
+      <div class="filter-tabs" role="tablist" aria-label="Filtrar por nivel">
+        <button class="filter-btn is-active" data-filter="all">Todas las Clases</button>
+        <button class="filter-btn" data-filter="1">Nivel 1: Flujo Continuo</button>
+        <button class="filter-btn" data-filter="2">Nivel 2: Viewport Apps</button>
+      </div>
+
+      <span class="portal-info-badge">Mostrando catálogo de clases activas y proyectadas</span>
+    </div>
+
+    <!-- Grilla de Tarjetas (Renderizada por js/portal.js) -->
+    <section class="classes-grid" id="classes-grid" aria-label="Catálogo de Clases">
+      <!-- Las tarjetas se generan dinámicamente -->
+    </section>
+  </main>
+
+  <!-- Visor Interactivo (Modal para Live Preview y Código) -->
+  <div class="viewer-overlay" id="viewer-overlay" role="dialog" aria-modal="true" aria-labelledby="viewer-project-title">
+    <div class="viewer-window">
+      
+      <!-- Topbar del Visor -->
+      <header class="viewer-topbar">
+        <div class="viewer-title-box">
+          <h2 class="viewer-project-title" id="viewer-project-title">Cargando proyecto...</h2>
+        </div>
+        <button class="viewer-close-btn" id="viewer-close-btn" aria-label="Cerrar visor">✕ Cerrar (Esc)</button>
+      </header>
+
+      <!-- Selector de Pestañas (Preview vs HTML vs CSS) -->
+      <nav class="viewer-tabs" aria-label="Vistas del proyecto">
+        <button class="viewer-tab-btn is-active" data-viewer-tab="preview">Vista Previa</button>
+        <button class="viewer-tab-btn" data-viewer-tab="html">Código HTML</button>
+        <button class="viewer-tab-btn" data-viewer-tab="css">Código CSS</button>
+      </nav>
+
+      <!-- Cuerpo del Visor -->
+      <div class="viewer-body">
+        
+        <!-- Panel 1: Iframe Interactivo con selector de pantalla -->
+        <section class="viewer-pane is-active" data-viewer-pane="preview" aria-label="Vista previa del resultado">
+          <div class="preview-controls">
+            <button class="preview-device-btn is-active" data-device="desktop">Desktop</button>
+            <button class="preview-device-btn" data-device="mobile">Mobile (375px)</button>
+          </div>
+          <div class="preview-frame-wrapper">
+            <iframe class="preview-frame" id="preview-frame" title="Vista previa del proyecto"></iframe>
+          </div>
+        </section>
+
+        <!-- Panel 2: Código HTML -->
+        <section class="viewer-pane" data-viewer-pane="html" aria-label="Código fuente HTML">
+          <div class="code-wrapper">
+            <pre class="code-block" id="code-html"><code>Cargando HTML...</code></pre>
+          </div>
+        </section>
+
+        <!-- Panel 3: Código CSS -->
+        <section class="viewer-pane" data-viewer-pane="css" aria-label="Código fuente CSS">
+          <div class="code-wrapper">
+            <pre class="code-block" id="code-css"><code>Cargando CSS...</code></pre>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Lógica Vanilla del Portal -->
+  <script src="js/portal.js"></script>
+</body>
+</html>
