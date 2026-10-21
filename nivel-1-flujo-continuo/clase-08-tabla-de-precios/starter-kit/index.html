@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes y Suscripciones - Clase 08</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================== -->
+  <!-- ZONA DEL SISTEMA: Encabezado y Sección      -->
+  <!-- ========================================== -->
+  <main class="pricing-container">
+    <header class="pricing-header">
+      <h1 class="pricing-title">Elegí el plan ideal para tu proyecto</h1>
+      <p class="pricing-subtitle">Precios claros, sin costos ocultos. Cancelá en cualquier momento.</p>
+
+      <!-- Alternador para el Nivel Desafío (Pro) -->
+      <div class="billing-toggle">
+        <button id="btn-monthly" class="toggle-btn active">Mensual</button>
+        <button id="btn-yearly" class="toggle-btn">Anual (-20%)</button>
+      </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- ZONA DE TRABAJO: Grilla de Tarjetas        -->
+    <!-- ========================================== -->
+    <div class="pricing-grid">
+
+      <!-- Tarjeta 1: Plan Básico -->
+      <article class="card">
+        <h2 class="card__title">Básico</h2>
+        <p class="card__description">Para proyectos personales iniciales.</p>
+        <div class="card__price-box">
+          <span class="price-currency">$</span>
+          <span class="price-amount" data-monthly="15">15</span>
+          <span class="price-period">/mes</span>
+        </div>
+        <ul class="card__features">
+          <li>1 proyecto activo</li>
+          <li>5 GB de almacenamiento</li>
+          <li>Soporte por comunidad</li>
+        </ul>
+        <button class="card__button">Elegir Básico</button>
+      </article>
+
+      <!-- Tarjeta 2: Plan Pro (Destacado) -->
+      <article class="card card--featured">
+        <h2 class="card__title">Pro</h2>
+        <p class="card__description">Para freelancers y profesionales en crecimiento.</p>
+        <div class="card__price-box">
+          <span class="price-currency">$</span>
+          <span class="price-amount" data-monthly="35">35</span>
+          <span class="price-period">/mes</span>
+        </div>
+        <ul class="card__features">
+          <li>Proyectos ilimitados</li>
+          <li>50 GB de almacenamiento</li>
+          <li>Soporte prioritario por email</li>
+          <li>Dominio personalizado</li>
+          <li>Estadísticas avanzadas</li>
+        </ul>
+        <button class="card__button card__button--primary">Elegir Pro</button>
+      </article>
+
+      <!-- Tarjeta 3: Plan Empresa -->
+      <article class="card">
+        <h2 class="card__title">Empresa</h2>
+        <p class="card__description">Para equipos y agencias consolidadas.</p>
+        <div class="card__price-box">
+          <span class="price-currency">$</span>
+          <span class="price-amount" data-monthly="80">80</span>
+          <span class="price-period">/mes</span>
+        </div>
+        <ul class="card__features">
+          <li>Múltiples usuarios en equipo</li>
+          <li>Almacenamiento ilimitado</li>
+          <li>Soporte 24/7 dedicado</li>
+          <li>SLA garantizado del 99.9%</li>
+        </ul>
+        <button class="card__button">Elegir Empresa</button>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- ========================================== -->
+  <!-- CAJA NEGRA: Script de IA (Pegar aquí abajo)-->
+  <!-- ========================================== -->
+
+</body>
+</html>
