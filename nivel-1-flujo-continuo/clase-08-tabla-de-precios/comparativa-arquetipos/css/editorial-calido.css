@@ -1,0 +1,131 @@
+/* ============================================================ */
+/* ARQUETIPO 2: EDITORIAL CÁLIDO (HUMANISTA / CONTENIDO)        */
+/* Archivo: css/editorial-calido.css                            */
+/* ============================================================ */
+
+:root {
+  --color-bg: #fafaf9;
+  --color-card-bg: #ffffff;
+  --color-text-main: #1c1917;
+  --color-text-muted: #78716c;
+  --color-feature-text: #44403c;
+  --color-border: #e7e5e4;
+  --color-divider: #f5f5f4;
+  
+  --color-accent: #c2410c; /* Terracota */
+  --color-accent-hover: #9a3412;
+  --color-accent-contrast: #ffffff;
+  --color-accent-subtle: #ffedd5;
+  
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+}
+
+.pricing-badge {
+  background-color: var(--color-accent-subtle);
+  color: var(--color-accent);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+}
+
+.pricing-title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.pricing-subtitle {
+  color: var(--color-text-muted);
+}
+
+.card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: none; /* Cero sombras; profundidad por líneas limpias */
+  transition: border-color 150ms ease;
+}
+
+.card-title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+}
+
+.card-desc {
+  color: var(--color-text-muted);
+}
+
+.card-price-box {
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.card-currency {
+  font-family: var(--font-serif);
+}
+
+.card-amount {
+  font-family: var(--font-serif);
+  font-weight: 700;
+}
+
+.card-period {
+  color: var(--color-text-muted);
+}
+
+.card-feature-item {
+  color: var(--color-feature-text);
+}
+
+.card-feature-icon {
+  color: var(--color-accent);
+}
+
+.card-btn {
+  background-color: #ffffff;
+  color: #1c1917;
+  border: 1px solid #1c1917;
+  border-radius: var(--radius-sm);
+  transition: all 150ms ease;
+}
+
+.card-btn:hover {
+  background-color: #1c1917;
+  color: #ffffff;
+}
+
+/* Tarjeta Destacada */
+.card-featured {
+  border: 1px solid var(--color-accent);
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(194, 65, 12, 0.08);
+  z-index: 2;
+}
+
+.card-featured .card-btn {
+  background-color: var(--color-accent);
+  color: var(--color-accent-contrast);
+  border-color: var(--color-accent);
+}
+
+.card-featured .card-btn:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.card-tag {
+  background-color: var(--color-accent);
+  color: var(--color-accent-contrast);
+  border-radius: var(--radius-sm);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

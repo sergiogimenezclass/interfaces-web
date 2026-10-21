@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparativa de Arquetipos CSS - Clase 08</title>
+
+  <!-- Tipografías de Google Fonts para los distintos arquetipos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <!-- 1. Estructura y Reset Común -->
+  <link rel="stylesheet" href="css/base.css">
+
+  <!-- 2. Hoja de Estilos Dinámica del Arquetipo (Cambiable por el botón) -->
+  <link id="theme-stylesheet" rel="stylesheet" href="css/saas-moderno.css">
+</head>
+<body>
+
+  <!-- ============================================================ -->
+  <!-- COMPONENTE: Tabla de Precios (Misma estructura HTML)        -->
+  <!-- ============================================================ -->
+  <main class="pricing-section">
+    <div class="pricing-wrapper">
+      
+      <header class="pricing-header">
+        <span class="pricing-badge">Suscripciones 2027</span>
+        <h1 class="pricing-title">Planes flexibles para cada etapa</h1>
+        <p class="pricing-subtitle">
+          Elegí la infraestructura adecuada para escalar tu producto sin fricciones ni costos ocultos.
+        </p>
+      </header>
+
+      <div class="pricing-grid">
+
+        <!-- Tarjeta 1: Plan Starter -->
+        <article class="card">
+          <div class="card-header">
+            <h2 class="card-title">Starter</h2>
+            <p class="card-desc">Para prototipos y proyectos personales iniciales.</p>
+          </div>
+
+          <div class="card-price-box">
+            <span class="card-currency">$</span>
+            <span class="card-amount">15</span>
+            <span class="card-period">/mes</span>
+          </div>
+
+          <ul class="card-features">
+            <li class="card-feature-item">
+              <span class="card-feature-icon">✓</span>
+              <span>1 entorno de desarrollo activo</span>
+            </li>
+            <li class="card-feature-item">
+              <span class="card-feature-icon">✓</span>
+              <span>5 GB de almacenamiento SSD</span>
+            </li>
+            <li class="card-feature-item">
+              <span class="card-feature-icon">✓</span>
+              <span>Soporte estándar por comunidad</span>
+            </li>
+          </ul>
+
+          <button class="card-btn">Empezar con Starter</button>
+        </article>
+
+        <!-- Tarjeta 2: Plan Profesional (Destacado) -->
+        <article class="card card-featured">
+          <span class="card-tag">Recomendado</span>
+
+          <div class="card-header">
+            <h2 class="card-title">Profesional</h2>
+            <p class="card-desc">Para desarrolladores y equipos en pleno crecimiento.</p>
+          </div>
+
+          <div class="card-price-box">
+            <span class="card-currency">$</span>
+            <span class="card-amount">39</span>
+            <span class="card-period">/mes</span>
+          </div>
+
+          <ul class="card-features">
+            <li class="card-feature-item">
+              <span class="card-feature-icon">✓</span>
+              <span>Entornos ilimitados concurrentes</span>
+            </li>
+            <li class="card-feature-item">
+              <span class="card-feature-icon">✓</span>
+              <span>100 GB de almacenamiento NVMe</span>
+            </li>
+            <li class="card-feature-item">
+              <span class="card-feature-icon">✓</span>
+              <span>Dominios personalizados ilimitados</span>
+            </li>
+            <li class="card-feature-item">
+              <span class="card-feature-icon">✓</span>
+              <span>Soporte prioritario 24/7 por chat</span>
+            </li>
+            <li class="card-feature-item">
+              <span class="card-feature-icon">✓</span>
+              <span>Métricas de rendimiento en tiempo real</span>
+            </li>
+          </ul>
+
+          <button class="card-btn">Obtener Profesional</button>
+        </article>
+
+        <!-- Tarjeta 3: Plan Enterprise -->
+        <article class="card">
+          <div class="card-header">
+            <h2 class="card-title">Enterprise</h2>
+            <p class="card-desc">Para organizaciones con requerimientos críticos de SLA.</p>
+          </div>
+
+          <div class="card-price-box">
+            <span class="card-currency">$</span>
+            <span class="card-amount">89</span>
+            <span class="card-period">/mes</span>
+          </div>
+
+          <ul class="card-features">
+            <li class="card-feature-item">
+              <span class="card-feature-icon">✓</span>
+              <span>Capacidad de cómputo dedicada</span>
+            </li>
+            <li class="card-feature-item">
+              <span class="card-feature-icon">✓</span>
+              <span>Almacenamiento escalable sin tope</span>
+            </li>
+            <li class="card-feature-item">
+              <span class="card-feature-icon">✓</span>
+              <span>Garantía de disponibilidad 99.99%</span>
+            </li>
+            <li class="card-feature-item">
+              <span class="card-feature-icon">✓</span>
+              <span>Gerente de cuenta técnico asignado</span>
+            </li>
+          </ul>
+
+          <button class="card-btn">Contactar Equipo</button>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- BOTÓN FLOTANTE EN EL CSS: Selector de Archivo de Estilo      -->
+  <!-- ============================================================ -->
+  <aside class="theme-switcher">
+    <div id="theme-menu" class="theme-switcher-menu" aria-label="Menú de temas">
+      <button class="theme-option-btn is-active" data-css="css/saas-moderno.css">
+        <span>1. SaaS Moderno</span>
+      </button>
+      <button class="theme-option-btn" data-css="css/editorial-calido.css">
+        <span>2. Editorial Cálido</span>
+      </button>
+      <button class="theme-option-btn" data-css="css/neobrutalismo.css">
+        <span>3. Neo-Brutalismo</span>
+      </button>
+      <button class="theme-option-btn" data-css="css/industrial-fintech.css">
+        <span>4. Industrial / Fintech</span>
+      </button>
+    </div>
+
+    <button id="theme-toggle-btn" class="theme-switcher-toggle" aria-expanded="false" aria-controls="theme-menu">
+      <span>🎨</span>
+      <span id="active-theme-label">Estilo: SaaS Moderno</span>
+    </button>
+  </aside>
+
+  <!-- ============================================================ -->
+  <!-- SCRIPT JS VANILLA ENCAPSULADO (Intercambia el archivo CSS)   -->
+  <!-- ============================================================ -->
+  <script>
+    (() => {
+      const toggleBtn = document.getElementById('theme-toggle-btn');
+      const menu = document.getElementById('theme-menu');
+      const themeLink = document.getElementById('theme-stylesheet');
+      const label = document.getElementById('active-theme-label');
+      const optionButtons = document.querySelectorAll('.theme-option-btn');
+
+      if (!toggleBtn || !menu || !themeLink) return;
+
+      // Abrir/cerrar menú desplegable al hacer clic en el botón flotante
+      toggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = menu.classList.toggle('is-open');
+        toggleBtn.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      // Cerrar menú al hacer clic fuera
+      document.addEventListener('click', () => {
+        menu.classList.remove('is-open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+      });
+
+      // Intercambiar archivo CSS al seleccionar una opción
+      optionButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const targetCss = btn.getAttribute('data-css');
+          if (!targetCss) return;
+
+          // Cambiar el enlace real de la hoja de estilo
+          themeLink.setAttribute('href', targetCss);
+
+          // Actualizar clases activas y texto del botón
+          optionButtons.forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+
+          const themeName = btn.querySelector('span')?.textContent || 'Estilo';
+          if (label) {
+            label.textContent = `Estilo: ${themeName.replace(/^\d+\.\s*/, '')}`;
+          }
+
+          // Cerrar menú
+          menu.classList.remove('is-open');
+          toggleBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

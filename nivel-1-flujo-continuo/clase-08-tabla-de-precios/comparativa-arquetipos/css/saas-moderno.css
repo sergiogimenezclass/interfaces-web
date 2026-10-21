@@ -1,0 +1,124 @@
+/* ============================================================ */
+/* ARQUETIPO 1: SAAS MODERNO (CLEAN TECH)                       */
+/* Archivo: css/saas-moderno.css                                */
+/* ============================================================ */
+
+:root {
+  --color-bg: #f8fafc;
+  --color-card-bg: #ffffff;
+  --color-text-main: #0f172a;
+  --color-text-muted: #64748b;
+  --color-feature-text: #334155;
+  --color-border: #e2e8f0;
+  --color-divider: #f1f5f9;
+  
+  --color-accent: #4f46e5;
+  --color-accent-hover: #4338ca;
+  --color-accent-contrast: #ffffff;
+  --color-accent-subtle: #e0e7ff;
+  
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+}
+
+.pricing-badge {
+  background-color: var(--color-accent-subtle);
+  color: var(--color-accent);
+  border-radius: var(--radius-sm);
+}
+
+.pricing-title {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.pricing-subtitle {
+  color: var(--color-text-muted);
+}
+
+.card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.card-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.card-desc {
+  color: var(--color-text-muted);
+}
+
+.card-price-box {
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.card-amount {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.card-period {
+  color: var(--color-text-muted);
+}
+
+.card-feature-item {
+  color: var(--color-feature-text);
+}
+
+.card-feature-icon {
+  color: var(--color-accent);
+}
+
+.card-btn {
+  background-color: #f1f5f9;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-sm);
+  transition: all 150ms ease;
+}
+
+.card-btn:hover {
+  background-color: #e2e8f0;
+}
+
+/* Tarjeta Destacada */
+.card-featured {
+  border: 2px solid var(--color-accent);
+  transform: scale(1.04);
+  box-shadow: 0 20px 25px -5px rgba(79, 70, 229, 0.15), 0 8px 10px -6px rgba(79, 70, 229, 0.1);
+  z-index: 2;
+}
+
+.card-featured .card-btn {
+  background-color: var(--color-accent);
+  color: var(--color-accent-contrast);
+  border-color: transparent;
+}
+
+.card-featured .card-btn:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.card-tag {
+  background-color: var(--color-accent);
+  color: var(--color-accent-contrast);
+  border-radius: 9999px;
+  box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
