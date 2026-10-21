@@ -1,0 +1,45 @@
+================================================================
+CONTENIDO CRUDO PARA LA CLASE 08 (MODO AUTÓNOMO)
+Copiá y pegá estos textos para armar la tabla de precios:
+================================================================
+
+[Encabezado de Sección]:
+Título: Elegí el plan ideal para tu proyecto
+Subtítulo: Precios claros, sin costos ocultos. Cancelá en cualquier momento.
+Insignia: Suscripciones 2027
+
+[Tarjeta 1]:
+Título: Básico
+Descripción: Para proyectos personales iniciales.
+Precio mensual: $15 /mes
+Precio anual: $150 /año
+Características:
+- 1 proyecto activo
+- 5 GB de almacenamiento
+- Soporte por comunidad
+Texto del botón: Elegir Básico
+
+[Tarjeta 2 - Destacada / Más Popular]:
+Insignia de tarjeta: Más Popular
+Título: Pro
+Descripción: Para freelancers y profesionales en crecimiento.
+Precio mensual: $35 /mes
+Precio anual: $350 /año
+Características:
+- Proyectos ilimitados
+- 50 GB de almacenamiento NVMe
+- Dominio personalizado
+- Soporte prioritario por email
+Texto del botón: Elegir Pro
+
+[Tarjeta 3]:
+Título: Empresa
+Descripción: Para equipos y agencias consolidadas.
+Precio mensual: $80 /mes
+Precio anual: $800 /año
+Características:
+- Múltiples usuarios en equipo
+- Almacenamiento ilimitado
+- SLA garantizado del 99.9%
+- Soporte 24/7 dedicado
+Texto del botón: Elegir Empresa
